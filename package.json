@@ -13,6 +13,7 @@
   },
   "author": "Facundo Leites",
   "license": "ISC",
+  "type": "module",
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
