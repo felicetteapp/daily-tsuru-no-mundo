@@ -94,6 +94,14 @@ body {
   grid-template-columns: subgrid;
   align-items: baseline;
 
+  h3 {
+    margin-top: 1rem;
+
+    @include non-mobile {
+      margin-top: 0;
+    }
+  }
+
   @include non-mobile {
     grid-template-rows: subgrid;
   }
@@ -226,6 +234,7 @@ body {
     flex: 1;
     overflow: hidden;
     object-fit: cover;
+    max-height: calc(var(--column-width) * 1.25);
   }
 
   &__caption {
