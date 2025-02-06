@@ -1,0 +1,27 @@
+---
+layout: baselayout.njk
+---
+
+{% include '_includes/_header.liquid' %}
+{% include '_includes/_about.liquid' %}
+{% include '_includes/_donate.liquid' %}
+
+<div class="tsuru__list">
+  {% for post in tsurus %}
+    <div class="tsuru__container">
+      <div class="tsuru">
+        <img
+          class="tsuru__image"
+          src="../images/{{ post.image }}"
+          alt="{{ post.title }}">
+        <main class="tsuru__caption">
+          <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
+          <h4 class="tsuru__caption__location">{{ post.location }}</h4>
+        </main>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% include '_includes/_me.liquid' %}
+{% include '_includes/_footer.liquid' %}

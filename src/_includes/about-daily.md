@@ -1,0 +1,1 @@
+**Tsuru No Mundo: Daily** is a _spin-off_ designed to keep me connected with origami, even when I'm not traveling (which is most of the time). **The idea is simple:** to force myself to take breaks during the day, step away from my phone and computer, and **engage in something manual** in the physical world.

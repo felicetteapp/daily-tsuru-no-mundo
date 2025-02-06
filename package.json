@@ -1,0 +1,24 @@
+{
+  "name": "daily-tsuru-no-mundo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:images": "node utils/index.js",
+    "dev": "concurrently \"npm run watch:sass\" \"eleventy --serve\"",
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "build:sass": "npx sass sass:_site/css --style=compressed",
+    "build:eleventy": "eleventy",
+    "build": "npm run build:sass && npm run build:eleventy"
+  },
+  "author": "Facundo Leites",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "concurrently": "^9.1.2",
+    "sass": "^1.83.4",
+    "sharp": "^0.33.5",
+    "uuid": "^11.0.5"
+  }
+}
