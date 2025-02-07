@@ -3,6 +3,16 @@
     "date": {
       "year": "2025",
       "month": "02",
+      "day": "07"
+    },
+    "location": "Curitiba, PR - Brasil",
+    "uuid": "ed375943-9a92-4102-96c7-f5f363e465e2",
+    "image": "ed375943-9a92-4102-96c7-f5f363e465e2.webp"
+  },
+  {
+    "date": {
+      "year": "2025",
+      "month": "02",
       "day": "06"
     },
     "location": "Curitiba,  PR - Brasil",

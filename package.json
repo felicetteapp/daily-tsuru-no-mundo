@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate:images": "node utils/index.js",
+    "generate:images": "node utils/index.cjs",
     "dev": "concurrently \"npm run watch:sass\" \"eleventy --serve\"",
     "watch:sass": "npx sass sass:_site/css --watch",
     "build:sass": "npx sass sass:_site/css --style=compressed",
