@@ -3,9 +3,9 @@ const fs = require("fs");
 const rawImagesPath = path.join(__dirname, "../raw_data");
 const uuid = require("uuid");
 const sharp = require("sharp");
+const { getAll } = require("@felicetteapp/img-loading-utils/dist/index.js");
 
-const dataJsonFilePath = path.join(__dirname, "../src/_data/tsurus.json");
-
+const tsuruDataFilePath = path.join(__dirname, "../src/_data/tsurus.json");
 const allImagesOnPath = [];
 
 fs.readdirSync(rawImagesPath).forEach((file) => {
@@ -33,9 +33,9 @@ const generateLowResImage = (file, uuid) => {
 };
 
 const processAllImages = async () => {
-  let dataJson = [];
-  if (fs.existsSync(dataJsonFilePath)) {
-    dataJson = JSON.parse(fs.readFileSync(dataJsonFilePath, "utf8"));
+  let tsuruData = [];
+  if (fs.existsSync(tsuruDataFilePath)) {
+    tsuruData = JSON.parse(fs.readFileSync(tsuruDataFilePath, "utf8"));
   }
 
   for (let i = 0; i < allImagesOnPath.length; i++) {
@@ -46,7 +46,7 @@ const processAllImages = async () => {
     const [year, month, day] = date.split("-");
     const generatedImage = await generateLowResImage(file, randomUuid);
 
-    dataJson.push({
+    tsuruData.push({
       date: { year, month, day },
       location,
       uuid: randomUuid,
@@ -54,7 +54,7 @@ const processAllImages = async () => {
     });
   }
 
-  dataJson.sort((a, b) => {
+  tsuruData.sort((a, b) => {
     if (a.date.year !== b.date.year) {
       return a.date.year - b.date.year;
     }
@@ -64,9 +64,35 @@ const processAllImages = async () => {
     return a.date.day - b.date.day;
   });
 
-  dataJson.reverse();
+  tsuruData.reverse();
 
-  fs.writeFileSync(dataJsonFilePath, JSON.stringify(dataJson, null, 2));
+  const inDir = "./public/images";
+
+  const allFilesFromDir = tsuruData.map((tsuru) => tsuru.image);
+
+  getAll(allFilesFromDir, "./public/images/thumbnail", inDir).then(
+    (response) => {
+      const newTsurusData = [];
+      response.forEach(({ thumbnail, mainColor, width, height, fullSize }) => {
+        const tsuruDataOfThisImage = tsuruData.find((tsuru) =>
+          fullSize.endsWith(tsuru.image)
+        );
+
+        const thisTsuruData = {
+          ...tsuruDataOfThisImage,
+          thumbnail: thumbnail.replace("public/", ""),
+          mainColor: `rgb(${mainColor.join(",")})`,
+          width,
+          height,
+        };
+        newTsurusData.push(thisTsuruData);
+      });
+      fs.writeFileSync(
+        tsuruDataFilePath,
+        JSON.stringify(newTsurusData, null, 2)
+      );
+    }
+  );
 };
 
 processAllImages();

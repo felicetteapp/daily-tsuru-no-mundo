@@ -258,3 +258,54 @@ body {
     }
   }
 }
+
+// felicette img-loading styles
+
+// prefix = il
+.il {
+  $prefix: &;
+  &-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: var(--il-aspect-ratio);
+    background: var(--il-main-color);
+
+    #{$prefix}-img,
+    #{$prefix}-thumbnail {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 0;
+    }
+
+    #{$prefix}-thumbnail {
+      transition: opacity 1s, transform 1s, filter 1s;
+      filter: blur(20px);
+      transform: scale(1.2);
+    }
+
+    &--thumbnail-loaded {
+      #{$prefix}-thumbnail {
+        opacity: 1;
+        filter: blur(10px);
+        transform: scale(1.1);
+      }
+    }
+
+    &--img-loaded {
+      #{$prefix}-img {
+        opacity: 1;
+      }
+
+      #{$prefix}-thumbnail {
+        opacity: 0;
+        transform: scale(1);
+        filter: blur(0);
+      }
+    }
+  }
+}

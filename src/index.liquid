@@ -10,10 +10,14 @@ layout: baselayout.njk
   {% for post in tsurus %}
     <div class="tsuru__container">
       <div class="tsuru">
-        <img
-          class="tsuru__image"
-          src="../images/{{ post.image }}"
-          alt="{{ post.title }}">
+        <div
+          img-loading
+          il-thumbnail="{{post.thumbnail}}"
+          il-fullsize="images/{{post.image}}"
+          il-width="{{post.width}}"
+          il-height="{{post.height}}"
+          il-aspect-ratio="{{post.width}}/{{post.height}}"
+          il-main-color="{{post.mainColor}}"></div>
         <main class="tsuru__caption">
           <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
           <h4 class="tsuru__caption__location">{{ post.location }}</h4>
