@@ -203,6 +203,8 @@ body {
     grid-area: tsuru;
     overflow-x: initial;
     overflow-y: initial;
+    height: fit-content;
+    padding-bottom: 1rem;
     grid-template-columns: repeat(auto-fill, var(--column-width));
     grid-auto-rows: calcAutoRowSize(3, 1rem);
     row-gap: 1rem;
@@ -284,6 +286,8 @@ body {
       height: auto;
       display: block;
       opacity: 0;
+      max-height: 100%;
+      object-fit: cover;
     }
 
     #{$prefix}-thumbnail {
