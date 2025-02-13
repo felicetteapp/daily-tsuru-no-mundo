@@ -17,7 +17,16 @@ layout: baselayout.njk
           il-width="{{post.width}}"
           il-height="{{post.height}}"
           il-aspect-ratio="{{post.width}}/{{post.height}}"
-          il-main-color="{{post.mainColor}}"></div>
+          il-main-color="{{post.mainColor}}"
+          style="
+            max-width: 100%;
+            max-height: 100%;
+            width: {{post.width}}px;
+            height: auto;
+            background-color: {{post.mainColor}};
+            aspect-ratio: {{post.width}}/{{post.height}};
+          ">
+</div>
         <main class="tsuru__caption">
           <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
           <h4 class="tsuru__caption__location">{{ post.location }}</h4>
