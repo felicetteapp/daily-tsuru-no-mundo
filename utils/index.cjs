@@ -92,15 +92,6 @@ const processAllImages = async () => {
         tsuruDataFilePath,
         JSON.stringify(newTsurusData, null, 2)
       );
-
-      console.log("All images processed!");
-      // move all processed images to /pre folder
-      newTsurusData.forEach((tsuru) => {
-        fs.renameSync(
-          path.join(rawImagesPath, tsuru.image),
-          path.join(rawImagesPath, "pre", tsuru.image)
-        );
-      });
     }
   );
 };
