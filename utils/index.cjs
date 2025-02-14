@@ -41,7 +41,7 @@ const processAllImages = async () => {
   for (let i = 0; i < allImagesOnPath.length; i++) {
     const file = allImagesOnPath[i];
     const randomUuid = uuid.v4();
-    const [date, rawLocation] = file.split("_");
+    const [date, rawLocation] = file.split('#')[0].split("_");
     const [location] = rawLocation.split(".");
     const [year, month, day] = date.split("-");
     const generatedImage = await generateLowResImage(file, randomUuid);
