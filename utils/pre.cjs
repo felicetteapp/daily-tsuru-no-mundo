@@ -10,14 +10,20 @@ fs.readdirSync(rawImagesPath).forEach((file) => {
   }
 });
 
-const fileNameMatchPattern = /IMG_\d{8}_\d{6}.jpg/i;
+
+//sample of aceptable file name: IMG_20210807_123456.jpg or 20210807_123456.jpg
+const fileNameMatchPattern = /^(IMG_)?\d{8}_\d{6}\.(jpg|jpeg|png|gif)$/i;
 
 const nameHasPattern = (name) => {
+  console.log(name, fileNameMatchPattern.test(name));
   return fileNameMatchPattern.test(name);
 };
 
 const generateNewName = (initialName) => {
-  const [_, date, time] = initialName.split("_");
+
+
+  const hasImgPrefix = initialName.startsWith("IMG");
+  const [_, date, time] = (hasImgPrefix ? initialName : `IMG_${initialName}`).split("_");
   const year = date.slice(0, 4);
   const month = date.slice(4, 6);
   const day = date.slice(6, 8);
