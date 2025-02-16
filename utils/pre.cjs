@@ -3,6 +3,7 @@ const fs = require("fs");
 const rawImagesPath = path.join(__dirname, "../raw_data/pre");
 
 const allImagesOnPath = [];
+const placeholderLocation = process.argv[2] ?? "Curitiba, PR - Brasil";
 
 fs.readdirSync(rawImagesPath).forEach((file) => {
   if (/\.(jpg|jpeg|png|gif)$/i.test(file)) {
@@ -27,7 +28,7 @@ const generateNewName = (initialName) => {
   const year = date.slice(0, 4);
   const month = date.slice(4, 6);
   const day = date.slice(6, 8);
-  const location = "Curitiba, PR - Brasil";
+  const location = placeholderLocation;
   return `${year}-${month}-${day}_${location}#${time}`;
 };
 
