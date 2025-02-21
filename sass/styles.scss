@@ -59,6 +59,8 @@ body {
       "me-image me-image tsuru"
       "me-text me-text tsuru"
       "donate donate tsuru"
+      "changelog changelog tsuru"
+      "changelog changelog tsuru"
       "footer footer tsuru";
   }
 }
@@ -120,6 +122,32 @@ body {
     grid-template-rows: subgrid;
     grid-template-columns: subgrid;
     align-items: baseline;
+  }
+}
+
+.changelog {
+  max-height: 50svh;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 12px;
+  @include non-mobile {
+    grid-area: changelog;
+    max-height: initial;
+  }
+
+  &__wrapper {
+    flex: 1;
+    display: block;
+    position: relative;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100%;
   }
 }
 
@@ -392,6 +420,7 @@ body {
 .footer,
 .me__images,
 .donate,
+.changelog,
 .about {
   transition: opacity 0.5s ease-in;
 }
@@ -402,6 +431,7 @@ body {
     .footer,
     .me__images,
     .donate,
+    .changelog,
     .about {
       opacity: 0;
       transition: opacity 0.5s ease-out;
