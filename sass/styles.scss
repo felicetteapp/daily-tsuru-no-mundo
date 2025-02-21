@@ -161,6 +161,8 @@ body {
     overflow-x: auto;
     white-space: nowrap;
 
+    padding-bottom: 2rem;
+
     @include non-mobile {
       white-space: initial;
       overflow-x: initial;
