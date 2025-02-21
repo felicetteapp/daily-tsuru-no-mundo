@@ -1,0 +1,57 @@
+<section class="filter__group__container">
+  <h1>Filters</h1>
+  <div class="filter__group">
+    <span class="filter__group__title">Year</span>
+    {% for year in groupedByYear.availableYears %}
+      <button
+        class="filter"
+        t-filter-btn
+        t-filter-type="year"
+        t-filter-value="{{year}}">{{ year }}</button>
+    {% endfor %}
+  </div>
+  <div class="filter__group">
+    <span class="filter__group__title">Month</span>
+    {% for month in groupedByMonth.availableMonths %}
+      <button
+        class="filter"
+        t-filter-btn
+        t-filter-type="month"
+        t-filter-value="{{month.month}}">{{ month.name }}</button>
+    {% endfor %}
+  </div>
+  <div class="filter__group">
+    <span class="filter__group__title">Country</span>
+    {% for country in groupedByCountry.availableCountries %}
+      <button
+        class="filter"
+        t-filter-btn
+        t-filter-type="country"
+        t-filter-value="{{country.name}}">{{ country.flag }} {{ country.name }}</button>
+    {% endfor %}
+  </div>
+  <div class="filter__group">
+    <span class="filter__group__title">City</span>
+    {% for city in groupedByCity.availableCities %}
+      <button
+        class="filter"
+        t-filter-btn
+        t-filter-type="city"
+        t-filter-value="{{city}}">{{ city }}</button>
+    {% endfor %}
+  </div>
+  <div class="filter__group filter__group--colors">
+    <span class="filter__group__title">Color</span>
+    {% for similarColors in groupedBySimilarColors.similarColorsGradients %}
+      <button
+        style="background: {{similarColors.color}};"
+        class="filter"
+        t-filter-btn
+        t-filter-type="color"
+        t-filter-value="{{similarColors.color}}"></button>
+    {% endfor %}
+  </div>
+</section>
+<button t-filter-toggle-btn class="filter__toggler">
+  <span class="filter__toggler__text">Filters</span>
+</button>
