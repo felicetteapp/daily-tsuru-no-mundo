@@ -11,6 +11,13 @@ export default async function (eleventyConfig) {
       "js/img-loading.js",
   });
 
+  // Add public json data
+  eleventyConfig.addPassthroughCopy({
+    "src/_data/similarColorsUuids.json": "public/data/similarColorsUuids.json",
+  });
+
+
+
   // Define a data directory
   eleventyConfig.addGlobalData("data", "src/_data");
 

@@ -2,13 +2,18 @@
 layout: baselayout.njk
 ---
 
-{% include '_includes/_header.liquid' %}
-{% include '_includes/_about.liquid' %}
-{% include '_includes/_donate.liquid' %}
 
 <div class="tsuru__list">
   {% for post in tsurus %}
-    <div class="tsuru__container">
+    <div
+      class="tsuru__container"
+      t-item
+      t-location="{{post.location}}"
+      t-uuid="{{post.uuid}}"
+      t-date-year="{{post.date.year}}"
+      t-date-month="{{post.date.month}}"
+      t-date-day="{{post.date.day}}"
+      t-main-color="{{ post.mainColor }}">
       <div class="tsuru">
         <div
           img-loading
@@ -36,6 +41,3 @@ layout: baselayout.njk
     </div>
   {% endfor %}
 </div>
-
-{% include '_includes/_me.liquid' %}
-{% include '_includes/_footer.liquid' %}

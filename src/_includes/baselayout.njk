@@ -17,8 +17,15 @@ title: Tsuru No Mundo - Daily
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <script src="js/img-loading.js"></script>
         <script src="js/script.js" defer></script>
+        <script src="js/filters.js" defer></script>
     </head>
     <body>
+        {% include '_header.liquid' %}
+        {% include '_about.liquid' %}
+        {% include '_donate.liquid' %}
         {{ content | safe }}
+        {% include '_me.liquid' %}
+        {% include '_footer.liquid' %}
+        {% include '_filters.liquid' %}
     </body>
 </html>

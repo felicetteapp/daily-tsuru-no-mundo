@@ -1,6 +1,6 @@
 :root {
   --column-width: min(300px, calc(75vw - 2 * 1rem));
-  --row-height: max(100px, 12svh);
+  --row-height: max(100px, 12lvh);
 }
 body,
 html {
@@ -32,6 +32,11 @@ a {
   }
 }
 
+html {
+  max-width: 100dvw;
+  max-height: 100dvh;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -40,6 +45,7 @@ body {
   padding: 1rem;
   overflow-x: hidden;
   overflow-y: auto;
+  max-width: 100dvw;
 
   @include non-mobile {
     display: grid;
@@ -257,6 +263,172 @@ body {
     &__location {
       font-size: 0.8rem;
       font-weight: 300;
+    }
+  }
+}
+
+.filter {
+  outline: none;
+  display: block;
+  padding: 0.5rem;
+  border: none;
+  background-color: #001c20;
+  color: #fff;
+  opacity: 0.85;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    background: rgba(#fff, 0.1);
+    scale: 1.1;
+  }
+
+  &--active {
+    background-color: #fff;
+    color: #001c20;
+    font-weight: 800;
+    border: 2px solid #fff;
+    &:hover {
+      background: #fff;
+      color: #001c20;
+    }
+  }
+
+  $root: &;
+
+  &__group {
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+
+    &__title {
+      position: absolute;
+      background: #001c20;
+      color: #fff;
+      top: -0.5rem;
+      padding: 0 1rem 0 0;
+      font-size: 1rem;
+      left: 0;
+    }
+
+    &--colors {
+      width: 100%;
+
+      & {
+        #{$root} {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+      }
+    }
+    &__container {
+      background-color: #001c20;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      gap: 1rem;
+      display: flex;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transform: translateX(-100%);
+      border-right: 2px solid transparent;
+      transition: all 0.5s ease-in-out, height 0s;
+      padding-bottom: calc(100lvh - 100svh + 2rem);
+      width: calc(100dvw);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @include non-mobile() {
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(2 * var(--column-width) + 1rem);
+      }
+    }
+  }
+
+  &__toggler {
+    color: #001c20;
+    background: white;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    position: fixed;
+    top: calc(100dvh - 1rem - 3rem);
+    left: 1rem;
+
+    @include non-mobile {
+      right: inherit;
+      left: initial;
+      border-radius: 1rem 0 0 1rem;
+      position: fixed;
+      left: calc(2 * var(--column-width) + 2rem);
+      transform: translateX(-100%);
+      width: auto;
+      transition: all 0.5s ease-in-out, top 0.25s ease-out;
+    }
+  }
+}
+
+.header,
+.footer,
+.me__images,
+.donate,
+.about {
+  transition: opacity 0.5s ease-in;
+}
+
+body {
+  &.filter--open {
+    .header,
+    .footer,
+    .me__images,
+    .donate,
+    .about {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+
+    .filter__group__container {
+      border-right-color: #fff;
+      transition: all 0.5s ease-in-out, border-right-color 0.5s 0.5s ease-in-out,
+        height 0s;
+      transform: translateX(0);
+      @include non-mobile() {
+        transform: translateX(1rem);
+      }
+    }
+
+    @include non-mobile {
+      .filter__toggler {
+        border-radius: 0 1rem 1rem 0;
+        transform: translateX(-2px);
+        transition: all 0.5s;
+        background: #001c20;
+        color: #fff;
+        border-color: white;
+        border-left-color: transparent;
+        transition: all 0.5s ease-in-out, border-color 0.5s 0.5s ease-in-out,
+          border-radius 0.5s 0.5s ease-in-out, top 0.25s ease-out;
+      }
     }
   }
 }
