@@ -271,6 +271,27 @@ body {
   flex-direction: column;
   width: 100%;
   row-gap: 1rem;
+  pointer-events: none;
+  opacity: 1;
+
+  &--selected {
+    opacity: 0;
+  }
+
+  img {
+    pointer-events: none;
+  }
+
+  &__container {
+    scale: 1;
+    background: rgba(#fff, 0);
+    transition: background 0.5s, scale 0.5s;
+    &:hover {
+      background: rgba(#fff, 0.1);
+      cursor: pointer;
+      scale: 1.01;
+    }
+  }
 
   &__image {
     flex: 1;
@@ -519,6 +540,43 @@ body {
         filter: blur(0);
         pointer-events: none;
       }
+    }
+  }
+}
+
+// modal
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  opacity: 0;
+  transition: background-color 0.5s ease-in-out;
+
+  &__image {
+    background-image: var(--modal-img-src);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+body {
+  &.modal--open {
+    .modal {
+      pointer-events: all;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 1;
     }
   }
 }
