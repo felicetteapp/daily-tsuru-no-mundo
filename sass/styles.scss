@@ -472,7 +472,7 @@ body {
     display: block;
     position: relative;
     overflow: hidden;
-    aspect-ratio: var(--il-aspect-ratio);
+    aspect-ratio: 3/4;
     background: var(--il-main-color);
 
     &[img-loading-me] {
