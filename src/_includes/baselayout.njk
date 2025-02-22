@@ -29,13 +29,21 @@ title: Tsuru No Mundo - Daily
         {{ content | safe }}
         {% include '_me.liquid' %}
         {% include '_changeLog.liquid' %}
-        {% include '_footer.liquid' %}
         {% include '_neighbors.liquid' %}
+        {% include '_footer.liquid' %}
         {% include '_filters.liquid' %}
         <div class="modal">
             <div class="modal__content">
                 <section class="modal__image"></section>
             </div>
         </div>
+        <svg id="modal-mouse" viewbox="0 0 500 400">
+            <path id="curve" d="M100,200 C100,0,400,0,400,200 C400,400,100,400,100,200" fill="transparent"/>
+            <text width="300" fill="currentColor">
+                <textPath xlink:href="#curve" startoffset="0%">
+                    Click anywhere to exit.
+                </textPath>
+            </text>
+        </svg>
     </body>
 </html>

@@ -262,7 +262,20 @@ const handleTsuruOnClick = (event) => {
   // animate to size of 500x500
 };
 
+
+const handleMouseMove = (event) => {
+  const x = event.clientX;
+  const y = event.clientY;
+
+  document.documentElement.style.setProperty("--mouse-x", `${x}px`);
+  document.documentElement.style.setProperty("--mouse-y", `${y}px`);
+}
+
 const onLoad = () => {
+
+  document.addEventListener("mousemove", handleMouseMove);
+
+
   const imgLoading = new ImgLoadingLibrary.ImgLoading();
   imgLoading.init("[img-loading]", {
     container: document.body,

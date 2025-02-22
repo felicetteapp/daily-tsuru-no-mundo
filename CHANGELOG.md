@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.5] - 2025-02-22
+
+### Added
+
+- An helper text to explain the user how to close the modal
+
+### Changed
+
+- Small visuals ajustments on the neighbor section for mobile
+
 ## [1.0.4] - 2025-02-22
 
 ### Added

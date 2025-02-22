@@ -45,8 +45,10 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   max-width: 100dvw;
+  padding-bottom: calcAutoRowSize(1, 1rem);
 
   @include non-mobile {
+    padding-bottom: 1rem;
     padding: 1rem;
     display: grid;
     grid-template-columns: var(--column-width) var(--column-width) auto;
@@ -61,8 +63,8 @@ body {
       "donate donate tsuru"
       "changelog changelog tsuru"
       "changelog changelog tsuru"
-      "footer footer tsuru"
-      "neighbors neighbors tsuru";
+      "neighbors neighbors tsuru"
+      "footer footer tsuru";
   }
 }
 
@@ -173,7 +175,7 @@ body {
     overflow-x: auto;
     white-space: nowrap;
 
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 
     @include non-mobile {
       white-space: initial;
@@ -467,6 +469,7 @@ body {
 .donate,
 .me__section,
 .changelog,
+.neighbors,
 .about {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -482,6 +485,7 @@ body {
 .me__section,
 .donate,
 .changelog,
+.neighbors,
 .about {
   transition: opacity 0.5s ease-in;
 }
@@ -587,16 +591,14 @@ body {
 
 .modal {
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0);
   pointer-events: none;
   opacity: 0;
-  transition: background-color 0.5s ease-in-out;
 
   &__image {
     background-image: var(--modal-img-src);
@@ -616,6 +618,52 @@ body {
     .modal {
       pointer-events: all;
       opacity: 1;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
+
+#modal-mouse {
+  display: none;
+
+  @include non-mobile() {
+    display: block;
+    pointer-events: none;
+    z-index: 9999;
+    position: fixed;
+    opacity: 0;
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+    color: #1d9fb3;
+    width: 15rem;
+    height: auto;
+    font-size: 4rem;
+    translate: -50% -50%;
+    transition: opacity 0.5s ease-out;
+    animation: spin 4s linear infinite;
+
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+
+body.modal--open {
+  cursor: crosshair;
+  #modal-mouse {
+    @include non-mobile() {
+      opacity: 1;
+
+      transition: opacity 1s ease-in both;
     }
   }
 }

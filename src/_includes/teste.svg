@@ -1,0 +1,8 @@
+<svg viewbox="0 0 500 400">
+    <path id="curve" d="M100,200 C100,0,400,0,400,200 C400,400,100,400,100,200 " fill="blue" />
+    <text width="300" fill="red">
+        <textPath xlink:href="#curve" startoffset="25%">
+            Click anywhere to close the modal
+        </textPath>
+    </text>
+</svg>
