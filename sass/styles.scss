@@ -272,10 +272,15 @@ body {
   width: 100%;
   row-gap: 1rem;
   pointer-events: none;
-  opacity: 1;
+
+  [img-loading] {
+    opacity: 1;
+  }
 
   &--selected {
-    opacity: 0;
+    [img-loading] {
+      opacity: 0;
+    }
   }
 
   img {
@@ -573,9 +578,9 @@ body {
 
 body {
   &.modal--open {
+    overflow: hidden !important;
     .modal {
       pointer-events: all;
-      background-color: rgba(0, 0, 0, 1);
       opacity: 1;
     }
   }

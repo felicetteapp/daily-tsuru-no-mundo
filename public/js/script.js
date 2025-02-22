@@ -1,3 +1,6 @@
+let selectedTsuruUuid = null;
+let isAnimatingModal = false;
+
 const clearAllSelectedTsuru = () => {
   const tsuruImages = document.querySelectorAll(".tsuru--selected");
   tsuruImages.forEach((tsuruImage) => {
@@ -5,9 +8,12 @@ const clearAllSelectedTsuru = () => {
   });
 };
 
-let selectedTsuruUuid = null;
 
 const handleCloseTsuruModal = () => {
+  if(isAnimatingModal || selectedTsuruUuid === null){
+    return;
+  }
+  isAnimatingModal = true;
   const tsuruImageEl = document.querySelector(
     `[il-uuid="${selectedTsuruUuid}"]`
   );
@@ -51,6 +57,7 @@ const handleCloseTsuruModal = () => {
       document.body.classList.remove("modal--open");
       selectedTsuruUuid = null;
       clearAllSelectedTsuru();
+      isAnimatingModal = false;
     });
 
   const parsedAspectRatio = imgAspectRatio.split("/");
@@ -118,6 +125,10 @@ const handleCloseTsuruModal = () => {
 };
 
 const handleTsuruOnClick = (event) => {
+  const hasATsuruSelected = selectedTsuruUuid !== null;
+  if (hasATsuruSelected || isAnimatingModal) {
+    return;
+  }
   event.preventDefault();
   clearAllSelectedTsuru();
 
@@ -130,8 +141,11 @@ const handleTsuruOnClick = (event) => {
   const imgAspectRatio = tsuruImageEl.getAttribute("il-aspect-ratio");
 
   if (!imgSrc) {
+    selectedTsuruUuid = null;
     return;
   }
+
+  isAnimatingModal = true;
 
   document.documentElement.style.setProperty(
     "--modal-img-src",
@@ -241,6 +255,7 @@ const handleTsuruOnClick = (event) => {
     modalImgAnimation.finished.then(() => {
       animation.commitStyles();
       animation.cancel();
+      isAnimatingModal = false;
     });
   });
 
