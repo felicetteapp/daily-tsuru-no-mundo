@@ -74,6 +74,12 @@ body {
   grid-template-columns: subgrid;
   align-items: baseline;
 
+  padding-top: 1rem;
+
+  @include non-mobile {
+    padding-top: 0;
+  }
+
   h1 {
     margin: 0;
     font-weight: 900;
@@ -251,7 +257,10 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
 
+  padding-left: 1rem;
+
   @include non-mobile {
+    padding-left: 0;
     display: grid;
     grid-area: tsuru;
     overflow-x: initial;
@@ -269,13 +278,6 @@ body {
   display: inline-block;
   width: var(--column-width);
   margin-right: 1rem;
-
-  &:first-child {
-    margin-left: 1rem;
-    @include non-mobile {
-      margin-left: 0;
-    }
-  }
 
   @include non-mobile {
     display: block;
