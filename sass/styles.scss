@@ -61,7 +61,8 @@ body {
       "donate donate tsuru"
       "changelog changelog tsuru"
       "changelog changelog tsuru"
-      "footer footer tsuru";
+      "footer footer tsuru"
+      "neighbors neighbors tsuru";
   }
 }
 
@@ -125,6 +126,12 @@ body {
   }
 }
 
+.neighbors {
+  @include non-mobile {
+    grid-area: neighbors;
+  }
+}
+
 .changelog {
   max-height: 50svh;
   overflow: hidden;
@@ -134,6 +141,11 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 12px;
+
+  code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0 0.25rem;
+  }
   @include non-mobile {
     grid-area: changelog;
     max-height: initial;

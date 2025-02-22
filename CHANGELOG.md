@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.4] - 2025-02-22
+
+### Added
+
+- Neighbors section to the page to display neighbor sites
+- `markdown-it` and `markdown-it-attrs` libs to parse the markdown content of the neighbors
+
+### Changed
+
+- Avoid the modal to be displayed when the user clicks on the image when the modal is already open
+- There was an small bug when opening the first modal caused by a conflict between the css styling and the webAimation API.
+- Improved the spacing of the images on the mobile version
+
 ## [1.0.3] - 2025-02-21
 
 ### Added

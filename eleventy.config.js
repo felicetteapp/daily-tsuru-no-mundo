@@ -1,17 +1,31 @@
 import { EleventyRenderPlugin } from "@11ty/eleventy";
-import {readFileSync} from "fs";
+import { readFileSync } from "fs";
+import MarkdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
 
 const readPackageJsonData = async () => {
   const packageJson = readFileSync("./package.json");
   return JSON.parse(packageJson);
-}
+};
 
 export default async function (eleventyConfig) {
-  
   // Configure Eleventy
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
   eleventyConfig.addPassthroughCopy({ "public/js": "js" });
+
+  // Add custom MD library to handle more attrs
+  const mdOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  const markdownLib = MarkdownIt(mdOptions)
+    .use(markdownItAttrs)
+    .disable("code");
+
+  eleventyConfig.setLibrary("md", markdownLib);
 
   // Add felicette img loading utils bundle
   eleventyConfig.addPassthroughCopy({
@@ -23,7 +37,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/_data/similarColorsUuids.json": "public/data/similarColorsUuids.json",
   });
-
 
   const packageJson = await readPackageJsonData();
 
