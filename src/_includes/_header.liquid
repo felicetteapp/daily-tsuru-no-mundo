@@ -1,4 +1,96 @@
 <header class="header">
-  <h1>Tsuru No Mundo</h1>
-  <h2>Daily</h2>
+
+  <h1 class="header__title">Tsuru No Mundo<strong>*</strong>:
+    <small>diário</small>
+  </h1>
+  <section class="header__translated-title__container">
+    <div class="header__translated-title__container__inner">
+      <span class="header__translated-title" lang="en">en: Tsuru in the world: daily</span>
+      <span class="header__translated-title" lang="es">es: Tsuru en el mundo: diario</span>
+      <span class="header__translated-title" lang="fr">fr: Tsuru dans le monde: quotidien</span>
+      <span class="header__translated-title" lang="en">en: Tsuru in the world: daily</span>
+    </div>
+  </section>
+  <section class="header__aka">
+    <p>
+      <small>
+        <strong>*aka:</strong>
+        Tsuru
+        <strong class="header__aka__value">No Mundo</strong>
+      </small>
+    </p>
+  </section>
+
 </header>
+<script>
+  const translatedTitles = document.querySelectorAll('.header__translated-title');
+  const translatedTitlesArray = Array.from(translatedTitles);
+  const translatedTitlesLength = translatedTitlesArray.length;
+  const akaValueEl = document.querySelector('.header__aka__value');
+
+  const innerEl  = document.querySelector('.header__translated-title__container__inner');
+  const animationSteps = [];
+
+  translatedTitlesArray.forEach((el, index) => {
+    if(index === 0) {
+      animationSteps.push({transform: `translateY(0)`});
+      return
+    }
+    animationSteps.push({transform: `translateY(${-1 * (index)}rem)`});
+    animationSteps.push({transform: `translateY(${-1 * (index)}rem)`});
+  })
+  
+  const animation = innerEl.animate(animationSteps,{
+    duration: 1000 * translatedTitlesLength + 1,
+    fill: 'forwards',
+    iterations: Infinity
+  });
+
+
+  const akasValues = [];
+
+  const fetchAkasData = async () => {
+    const response = await fetch('public/data/akas.json');
+    const data = await response.json();
+
+
+    data.availableCountries.forEach((country) => {
+      switch(country.genre){
+        case 'F':
+          akasValues.push(country.number === 'S' ? `Na ${country.name}` : `Nas ${country.name}`);
+          break;
+        case 'M':
+          akasValues.push(country.number === 'S' ? `No ${country.name}` : `Nos ${country.name}`);
+          break;
+      }
+    });
+
+    data.availableCities.forEach((city) => {
+      switch(city.genre){
+        case 'F':
+          akasValues.push(`Na ${city.name}`);
+          break;
+        case 'M':
+          akasValues.push(`No ${city.name}`);
+          break;
+        case 'N':
+          akasValues.push(`Em ${city.name}`);
+          break;
+      }
+    });
+
+    akasValues.sort(() => Math.random() - 0.5);
+    animateAkas();
+  }
+
+
+  const animateAkas = () => {
+    let index = 0;
+    setInterval(() => {
+      akaValueEl.textContent = akasValues[index];
+      index = index === akasValues.length - 1 ? 0 : index + 1;
+    }, 750);
+  }
+
+  fetchAkasData();
+</script>

@@ -1,11 +1,12 @@
 {
   "name": "daily-tsuru-no-mundo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate:images": "node utils/index.cjs",
     "generate:groups": "node utils/groups.cjs",
+    "generate:akas": "node utils/akas.cjs",
     "pre-generate:images": "node utils/pre.cjs",
     "dev": "concurrently \"npm run watch:sass\" \"eleventy --serve\"",
     "watch:sass": "npx sass sass:_site/css --watch",

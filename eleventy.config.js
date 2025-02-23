@@ -37,6 +37,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/_data/similarColorsUuids.json": "public/data/similarColorsUuids.json",
   });
+  eleventyConfig.addPassthroughCopy({
+    "src/_data/akas.json": "public/data/akas.json",
+  });
+  
+
+
 
   const packageJson = await readPackageJsonData();
 

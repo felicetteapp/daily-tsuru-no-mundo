@@ -1,0 +1,141 @@
+{
+  "availableCountries": [
+    {
+      "name": "Argentina",
+      "genre": "F",
+      "number": "S"
+    },
+    {
+      "name": "Brasil",
+      "genre": "M",
+      "number": "S"
+    },
+    {
+      "name": "Chile",
+      "genre": "M",
+      "number": "S"
+    },
+    {
+      "name": "Alemanha",
+      "genre": "F",
+      "number": "S"
+    },
+    {
+      "name": "Espanha",
+      "genre": "F",
+      "number": "S"
+    },
+    {
+      "name": "França",
+      "genre": "F",
+      "number": "S"
+    },
+    {
+      "name": "Paises Baixos",
+      "genre": "M",
+      "number": "P"
+    },
+    {
+      "name": "Uruguai",
+      "genre": "M",
+      "number": "S"
+    }
+  ],
+  "availableCities": [
+    {
+      "name": "Amsterdã",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Belo Horizonte",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Campina Grande do Sul",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Carrasco",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Curitiba",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Duisburg",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Estancia Harberton",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Isla Martillo",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Madrid",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Matinhos",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Montevideo",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Morretes",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Paris",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Punta Arenas",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Santiago de Chile",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "São José dos Pinhais",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "São Paulo",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Ushuaia",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Viña del Mar",
+      "genre": "N",
+      "number": "S"
+    }
+  ]
+}
