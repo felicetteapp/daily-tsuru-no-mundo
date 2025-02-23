@@ -66,6 +66,7 @@ body {
       "changelog changelog tsuru"
       "changelog changelog tsuru"
       "neighbors neighbors tsuru"
+      "neighbors neighbors tsuru"
       "footer footer tsuru";
   }
 }
@@ -95,6 +96,12 @@ body {
   }
 
   &__title {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
     strong {
       color: #1d9fb3;
     }
@@ -179,7 +186,45 @@ body {
   }
 }
 
+.page {
+  overflow: hidden;
+
+  max-width: calc(var(--column-width) * 2 + 1rem);
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include non-mobile {
+    grid-area: tsuru;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  code {
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.25rem;
+    font-family: Roboto Mono, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+
+    overflow-x: auto;
+  }
+}
+
 .neighbors {
+  code {
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.25rem;
+    font-family: Roboto Mono, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+
+    overflow-x: auto;
+  }
   @include non-mobile {
     grid-area: neighbors;
   }

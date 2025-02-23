@@ -1,8 +1,10 @@
 <header class="header">
 
-  <h1 class="header__title">Tsuru No Mundo<strong>*</strong>:
-    <small>diário</small>
-  </h1>
+  <a href="/" class="header__title">
+    <h1>Tsuru No Mundo<strong>*</strong>:
+      <small>diário</small>
+    </h1>
+  </a>
   <section class="header__translated-title__container">
     <div class="header__translated-title__container__inner">
       <span class="header__translated-title" lang="en">en: Tsuru in the world: daily</span>
@@ -50,7 +52,7 @@
   const akasValues = [];
 
   const fetchAkasData = async () => {
-    const response = await fetch('public/data/akas.json');
+    const response = await fetch('../public/data/akas.json');
     const data = await response.json();
 
 

@@ -287,7 +287,11 @@ const onLoad = () => {
   const tsuruImages = document.querySelectorAll("[t-item]");
 
   const modalEl = document.querySelector(".modal");
-  modalEl.addEventListener("click", handleCloseTsuruModal);
+
+  if(modalEl){
+    modalEl.addEventListener("click", handleCloseTsuruModal);
+  }
+  
   tsuruImages.forEach((tsuruImage) => {
     tsuruImage.addEventListener("click", handleTsuruOnClick);
   });
