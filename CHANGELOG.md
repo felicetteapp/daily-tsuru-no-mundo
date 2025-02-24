@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.8] - 2025-02-24
+
+### Added
+
+- A separate file to store the neighbors data
+- `markdown-it-container` lib to add more customization to the markdown content
+- `highlight.js` lib to highlight the code blocks on the markdown content
+
+### Changed
+
+- Small visual adjustments on the neighbor section
+
 ## [1.0.7] - 2025-02-23
 
 ### Added

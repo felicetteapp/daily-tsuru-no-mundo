@@ -2,6 +2,8 @@ import { EleventyRenderPlugin } from "@11ty/eleventy";
 import { readFileSync } from "fs";
 import MarkdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
+import MarkdownItContainer from "markdown-it-container";
+import hljs from "highlight.js";
 
 const readPackageJsonData = async () => {
   const packageJson = readFileSync("./package.json");
@@ -19,9 +21,20 @@ export default async function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
+    highlight: (str, lang) => {
+      const code =
+        lang && hljs.getLanguage(lang)
+          ? hljs.highlight(str, {
+              language: lang,
+              ignoreIllegals: true,
+            }).value
+          : md.utils.escapeHtml(str);
+      return `<pre class="hljs"><code>${code}</code></pre>`;
+    },
   };
 
   const markdownLib = MarkdownIt(mdOptions)
+    .use(MarkdownItContainer, "md-flex")
     .use(markdownItAttrs)
     .disable("code");
 
@@ -33,6 +46,14 @@ export default async function (eleventyConfig) {
       "js/img-loading.js",
   });
 
+  // Add markdown-it theme css
+  // 'highlight.js/styles/stackoverflow-light.css';
+
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/highlight.js/styles/tokyo-night-dark.css":
+      "css/highlight.css",
+  });
+
   // Add public json data
   eleventyConfig.addPassthroughCopy({
     "src/_data/similarColorsUuids.json": "public/data/similarColorsUuids.json",
@@ -40,9 +61,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/_data/akas.json": "public/data/akas.json",
   });
-  
-
-
 
   const packageJson = await readPackageJsonData();
 

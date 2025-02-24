@@ -2,8 +2,7 @@
 
 Cools sites that are worth checking out:
 
-[![Felicette.app](../images/neighbors/felicette.GIF)](https://felicette.app){target="_blank" rel="noopener"}
-
+{% include './_includes/neighborsGifs.md' %}
 
 ## Can I add my site to this list?
 
@@ -12,7 +11,6 @@ Sure! Just send me an email at [ola@tsurunomundo.com.br](mailto:ola@tsurunomundo
 ## Can I add your site to my list?
 
 Of course! I'd be honored. Just let me know when you do so I can check it out!
-
 
 ### How can I do it?
 
