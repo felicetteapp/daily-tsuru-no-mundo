@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.9] - 2025-02-24
+
+### Added
+
+- Some new links to the neighbors section
+- New layout to wider screens (above 2230px)
+
 ## [1.0.8] - 2025-02-24
 
 ### Added

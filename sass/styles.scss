@@ -29,7 +29,13 @@ a {
 }
 
 @mixin non-mobile {
-  @media (min-width: 800px) {
+  @media (min-width: 975px) {
+    @content;
+  }
+}
+
+@mixin widest-screens {
+  @media (min-width: 2230px) {
     @content;
   }
 }
@@ -63,11 +69,30 @@ body {
       "me-image me-image tsuru"
       "me-text me-text tsuru"
       "donate donate tsuru"
-      "changelog changelog tsuru"
-      "changelog changelog tsuru"
       "neighbors neighbors tsuru"
       "neighbors neighbors tsuru"
+      "changelog changelog tsuru"
+      "changelog changelog tsuru"
       "footer footer tsuru";
+  }
+
+  @include widest-screens {
+    justify-content: center;
+    grid-template-columns:
+      var(--column-width) var(--column-width) var(--column-width) var(
+        --column-width
+      )
+      var(--column-width) var(--column-width)
+      var(--column-width);
+
+    grid-template-areas:
+      "header header tsuru tsuru tsuru neighbors neighbors "
+      "about about tsuru tsuru tsuru neighbors neighbors"
+      "about about tsuru tsuru tsuru changelog changelog"
+      "me-image me-image tsuru tsuru tsuru changelog changelog"
+      "me-text me-text tsuru tsuru tsuru changelog changelog"
+      "donate donate tsuru tsuru tsuru footer footer"
+      "donate donate tsuru tsuru tsuru footer footer";
   }
 }
 
@@ -534,6 +559,10 @@ body {
         padding-right: 0;
         width: calc(2 * var(--column-width) + 1rem);
       }
+
+      @include widest-screens {
+        width: calc(50% - 2rem - 1.5 * var(--column-width) - 1rem);
+      }
     }
   }
 
@@ -563,6 +592,10 @@ body {
       transform: translateX(-100%);
       width: auto;
       transition: all 0.5s ease-in-out, top 0.25s ease-out;
+    }
+
+    @include widest-screens {
+      left: calc(50% - 2rem - 1.5 * var(--column-width));
     }
   }
 }
@@ -601,6 +634,7 @@ body {
     .me__section,
     .donate,
     .changelog,
+    .neighbors,
     .about {
       opacity: 0;
       transition: opacity 0.5s ease-out;
