@@ -124,6 +124,9 @@ const handleCloseTsuruModal = () => {
 };
 
 const handleTsuruOnClick = (event) => {
+  if(event.target !== event.currentTarget){
+    return;
+  }
   const hasATsuruSelected = selectedTsuruUuid !== null;
   if (hasATsuruSelected || isAnimatingModal) {
     return;

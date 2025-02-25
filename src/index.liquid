@@ -37,7 +37,21 @@ layout: baselayout.njk
         <main class="tsuru__caption">
           <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
           <h4 class="tsuru__caption__location">{{ post.location }}</h4>
+          <div class="tsuru__caption__actions">
+            <button t-gif-btn t-gif-uuid="{{post.uuid}}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+              </svg>
+            </button>
+          </div>
         </main>
+        <div class="tsuru__overlay">
+          <img
+            t-overlay-gif-image
+            width="88"
+            height="31" />
+          <p>You can download and share this GIF anywhere you want. If you add it to your site let me know, I would love to see it! 😊</p>
+        </div>
       </div>
     </div>
   {% endfor %}

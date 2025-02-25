@@ -62,6 +62,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/_data/akas.json": "public/data/akas.json",
   });
+  eleventyConfig.addPassthroughCopy({
+    "src/_data/tsurusGifs.json": "public/data/tsurusGifs.json",
+  });
 
   const packageJson = await readPackageJsonData();
 

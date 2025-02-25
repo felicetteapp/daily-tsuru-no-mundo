@@ -241,6 +241,7 @@ body {
 
 .page {
   overflow: hidden;
+  height: fit-content;
 
   max-width: calc(var(--column-width) * 2 + 1rem);
 
@@ -437,11 +438,52 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  row-gap: 1rem;
   pointer-events: none;
 
   [img-loading] {
     opacity: 1;
+  }
+
+  &__overlay {
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    opacity: 0;
+    height: 0;
+    padding: 0rem 1rem;
+    transition: height 0.5s, opacity 0.5s, padding;
+    overflow-y: auto;
+    white-space: normal;
+
+    img {
+      pointer-events: all !important;
+    }
+  }
+
+  [img-loading] {
+    transition: border-bottom-right-radius 0.5s, border-bottom-left-radius 0.5s;
+  }
+
+  &--overlay-open {
+    [img-loading] {
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+    .tsuru__overlay {
+      cursor: initial;
+      padding: 1rem 1rem;
+      opacity: 1;
+      height: 100%;
+      pointer-events: all;
+    }
+
+    .tsuru__caption__actions {
+      button {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 
   &--selected {
@@ -473,19 +515,59 @@ body {
   }
 
   &__caption {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "date actions" "location actions";
+    justify-content: space-between;
+    align-content: center;
+    column-gap: 1rem;
     &__date,
     &__location {
       margin: 0;
     }
 
     &__date {
+      grid-area: date;
       font-size: 1rem;
       font-weight: 700;
     }
 
     &__location {
+      grid-area: location;
       font-size: 0.8rem;
       font-weight: 300;
+    }
+
+    &__actions {
+      width: min-content;
+      grid-area: actions;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+      pointer-events: all;
+
+      button {
+        cursor: pointer;
+        color: #fff;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 0.5rem 1rem;
+
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          pointer-events: none;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        &:hover {
+          background: rgba(#fff, 0.1);
+        }
+      }
     }
   }
 }
