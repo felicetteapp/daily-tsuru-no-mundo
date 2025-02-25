@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.12] - 2025-02-25
+
+### Added
+
+- A script to generate animated gifs from the tsurus
+- A new section at each tsuru to display the gifs
+
 ## [1.0.11] - 2025-02-25
 
 ### Added

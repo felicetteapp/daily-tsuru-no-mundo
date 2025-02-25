@@ -53,3 +53,9 @@ Just download the image and add it to your site with the link to [https://dailyt
 ```markdown
 [![Tsuru no Mundo daiy](https://daily.tsurunomundo.com.br/images/neighbors/daily.tsurunomundo.com.br.88x31.GIF)](https://daily.tsurunomundo.com.br)
 ```
+
+## More ?
+
+Each tsuru has its own gif if you want to use it on your site. You can find them clicking the arrow button inside each photo
+
+![Tsuru no Mundo daiy](../images/neighbors/tsuru_gif.gif){width="100%" height="auto"}
