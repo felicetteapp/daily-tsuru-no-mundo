@@ -35,6 +35,7 @@ export default async function (eleventyConfig) {
 
   const markdownLib = MarkdownIt(mdOptions)
     .use(MarkdownItContainer, "md-flex")
+    .use(MarkdownItContainer, "md-flex-vert", {marker:';' })
     .use(markdownItAttrs)
     .disable("code");
 

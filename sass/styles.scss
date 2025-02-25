@@ -212,13 +212,25 @@ body {
 }
 
 .md-flex {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
   & > p {
+    flex: 1;
     margin: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
+  }
+
+  &-vert {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.10] - 2025-02-25
+
+### Added
+
+- A new option to add my site button to yours
+
 ## [1.0.9] - 2025-02-24
 
 ### Added
