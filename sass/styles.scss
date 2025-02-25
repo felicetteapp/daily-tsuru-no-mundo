@@ -3,7 +3,9 @@
 :root {
   --column-width: min(300px, calc(75vw - 2 * 1rem));
   --row-height: max(100px, 12lvh);
+  --scroll-width: 0;
 }
+
 body,
 html {
   margin: 0;
@@ -52,6 +54,9 @@ body {
   row-gap: 1rem;
   overflow-x: hidden;
   overflow-y: auto;
+
+  scrollbar-width: var(--scroll-width);
+
   max-width: 100dvw;
   padding-bottom: calcAutoRowSize(1, 1rem);
 
@@ -258,6 +263,7 @@ body {
     font-size: 12px;
 
     overflow-x: auto;
+    scrollbar-width: thin;
   }
 }
 
@@ -298,6 +304,7 @@ body {
   }
 
   &__wrapper {
+    scrollbar-width: thin;
     flex: 1;
     display: block;
     position: relative;
@@ -764,6 +771,7 @@ body {
 body {
   &.modal--open {
     overflow: hidden !important;
+    margin-right: var(--scroll-width);
     .modal {
       pointer-events: all;
       opacity: 1;

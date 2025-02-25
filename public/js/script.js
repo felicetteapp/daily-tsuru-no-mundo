@@ -129,6 +129,9 @@ const handleTsuruOnClick = (event) => {
   if (hasATsuruSelected || isAnimatingModal) {
     return;
   }
+  const widthWithoutModalOpen = document.documentElement.clientWidth;
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
   event.preventDefault();
   clearAllSelectedTsuru();
 
@@ -158,6 +161,15 @@ const handleTsuruOnClick = (event) => {
 
   document.body.classList.add("modal--open");
   tsuruEl.classList.add("tsuru--selected");
+
+
+  const widthWithModalOpen = document.documentElement.clientWidth;
+  document.documentElement.style.setProperty("--scroll-bar-width", "0px");
+
+  if(widthWithoutModalOpen !== widthWithModalOpen){
+    document.documentElement.style.setProperty("--scroll-bar-width", `${scrollBarWidth
+    }px`);
+  }
 
   const positionOfTheTsuru = tsuruImageEl.getBoundingClientRect();
   const positionRelativeToViewport = {
