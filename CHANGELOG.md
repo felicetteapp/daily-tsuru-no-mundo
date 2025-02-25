@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.11] - 2025-02-25
+
+### Added
+
+- A new page to show information about the building process of the site
+- A basic sitemap to help the user navigate through the site
+
 ## [1.0.10] - 2025-02-25
 
 ### Added

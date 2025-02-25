@@ -11,4 +11,5 @@
 [![Zucchini.cc](../images/neighbors/zucchini.cc.gif)](https://zucchini.cc){target="_blank" rel="noopener"}
 [![Malenkorin.net](https://melankorin.net/assets/img/buttons/button-1.gif)](https://melankorin.net){target="_blank" rel="noopener"}
 [![luvstarkei.com](../images/neighbors/luvstarkei.com.webp)](https://luvstarkei.com){target="_blank" rel="noopener"}
+[![irony-machine.neocities.org](../images/neighbors/irony-machine.neocities.org.gif)](https://irony-machine.neocities.org){target="_blank" rel="noopener"}
 :::
