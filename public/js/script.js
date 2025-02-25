@@ -8,9 +8,8 @@ const clearAllSelectedTsuru = () => {
   });
 };
 
-
 const handleCloseTsuruModal = () => {
-  if(isAnimatingModal || selectedTsuruUuid === null){
+  if (isAnimatingModal || selectedTsuruUuid === null) {
     return;
   }
   isAnimatingModal = true;
@@ -130,7 +129,8 @@ const handleTsuruOnClick = (event) => {
     return;
   }
   const widthWithoutModalOpen = document.documentElement.clientWidth;
-  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+  const scrollBarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
 
   event.preventDefault();
   clearAllSelectedTsuru();
@@ -162,13 +162,17 @@ const handleTsuruOnClick = (event) => {
   document.body.classList.add("modal--open");
   tsuruEl.classList.add("tsuru--selected");
 
-
   const widthWithModalOpen = document.documentElement.clientWidth;
-  document.documentElement.style.setProperty("--scroll-bar-width", "0px");
 
-  if(widthWithoutModalOpen !== widthWithModalOpen){
-    document.documentElement.style.setProperty("--scroll-bar-width", `${scrollBarWidth
-    }px`);
+  console.log(widthWithoutModalOpen, widthWithModalOpen);
+
+  if (widthWithoutModalOpen !== widthWithModalOpen) {
+    document.documentElement.style.setProperty(
+      "--scroll-width",
+      `${scrollBarWidth}px`
+    );
+  } else {
+    document.documentElement.style.setProperty("--scroll-width", "0px");
   }
 
   const positionOfTheTsuru = tsuruImageEl.getBoundingClientRect();
@@ -274,19 +278,16 @@ const handleTsuruOnClick = (event) => {
   // animate to size of 500x500
 };
 
-
 const handleMouseMove = (event) => {
   const x = event.clientX;
   const y = event.clientY;
 
   document.documentElement.style.setProperty("--mouse-x", `${x}px`);
   document.documentElement.style.setProperty("--mouse-y", `${y}px`);
-}
+};
 
 const onLoad = () => {
-
   document.addEventListener("mousemove", handleMouseMove);
-
 
   const imgLoading = new ImgLoadingLibrary.ImgLoading();
   imgLoading.init("[img-loading]", {
@@ -300,10 +301,10 @@ const onLoad = () => {
 
   const modalEl = document.querySelector(".modal");
 
-  if(modalEl){
+  if (modalEl) {
     modalEl.addEventListener("click", handleCloseTsuruModal);
   }
-  
+
   tsuruImages.forEach((tsuruImage) => {
     tsuruImage.addEventListener("click", handleTsuruOnClick);
   });

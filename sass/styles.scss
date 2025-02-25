@@ -768,10 +768,15 @@ body {
   }
 }
 
+html {
+  &:has(.modal--open) {
+    padding-right: var(--scroll-width);
+  }
+}
+
 body {
   &.modal--open {
     overflow: hidden !important;
-    margin-right: var(--scroll-width);
     .modal {
       pointer-events: all;
       opacity: 1;
