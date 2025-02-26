@@ -480,7 +480,10 @@ body {
     .tsuru__caption__actions {
       button {
         svg {
-          transform: rotate(180deg);
+          transform: rotate(0deg);
+          @include non-mobile {
+            transform: rotate(180deg);
+          }
         }
       }
     }
@@ -562,6 +565,11 @@ body {
           height: 1.5rem;
           pointer-events: none;
           transition: transform 0.5s ease-in-out;
+
+          transform: rotate(180deg);
+          @include non-mobile {
+            transform: rotate(0deg);
+          }
         }
 
         &:hover {
