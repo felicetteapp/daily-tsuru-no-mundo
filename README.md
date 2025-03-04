@@ -6,10 +6,6 @@ A static website to display all the daily tsuru pictures from **Tsuru No Mundo**
 
 ![Tsuru No Mundo fullscreen](./full.gif)
 
-## Responsive
-
-![Tsuru No Mundo windowed](./window.gif)
-
 ## Mobile
 
 ![Tsuru No Mundo mobile](./mob.gif)
