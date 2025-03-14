@@ -1598,5 +1598,33 @@
   {
     "uuid": "2381e09e-9560-4940-8e01-b62998a5d9ef",
     "path": "images/gifs/2381e09e-9560-4940-8e01-b62998a5d9ef.gif"
+  },
+  {
+    "uuid": "897e6bf8-39ac-4502-9c16-360de234133b",
+    "path": "images/gifs/897e6bf8-39ac-4502-9c16-360de234133b.gif"
+  },
+  {
+    "uuid": "a606f511-2bb3-4597-83ac-b7a7b4c37fac",
+    "path": "images/gifs/a606f511-2bb3-4597-83ac-b7a7b4c37fac.gif"
+  },
+  {
+    "uuid": "ae7e61b1-5c58-4c66-8829-fe6fb8cceb72",
+    "path": "images/gifs/ae7e61b1-5c58-4c66-8829-fe6fb8cceb72.gif"
+  },
+  {
+    "uuid": "50daa37c-c5de-467c-b250-20b8b4cc1326",
+    "path": "images/gifs/50daa37c-c5de-467c-b250-20b8b4cc1326.gif"
+  },
+  {
+    "uuid": "56527d7f-6693-45cc-a8ae-d181c0251a6a",
+    "path": "images/gifs/56527d7f-6693-45cc-a8ae-d181c0251a6a.gif"
+  },
+  {
+    "uuid": "472c64c8-2815-4bad-afdb-e2d70274a090",
+    "path": "images/gifs/472c64c8-2815-4bad-afdb-e2d70274a090.gif"
+  },
+  {
+    "uuid": "8721636c-019e-4285-affb-10ee226c8c1b",
+    "path": "images/gifs/8721636c-019e-4285-affb-10ee226c8c1b.gif"
   }
 ]
