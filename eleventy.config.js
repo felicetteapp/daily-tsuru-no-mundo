@@ -15,6 +15,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
   eleventyConfig.addPassthroughCopy({ "public/js": "js" });
+  eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
 
   // Add custom MD library to handle more attrs
   const mdOptions = {
