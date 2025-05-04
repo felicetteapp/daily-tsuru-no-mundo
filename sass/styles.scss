@@ -280,6 +280,11 @@ body {
 
     overflow-x: auto;
   }
+
+  img {
+    image-rendering: pixelated;
+  }
+
   @include non-mobile {
     grid-area: neighbors;
   }

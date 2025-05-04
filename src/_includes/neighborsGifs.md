@@ -13,4 +13,5 @@
 [![luvstarkei.com](../images/neighbors/luvstarkei.com.webp)](https://luvstarkei.com){target="_blank" rel="noopener"}
 [![irony-machine.neocities.org](../images/neighbors/irony-machine.neocities.org.gif)](https://irony-machine.neocities.org){target="_blank" rel="noopener"}
 [![ooops.lol](../images/neighbors/ooops.lol.gif)](https://ooops.lol){target="_blank" rel="noopener"}
+[![maddycha.com](../images/neighbors/maddycha.com.gif)](https://maddycha.com){target="_blank" rel="noopener"}
 :::

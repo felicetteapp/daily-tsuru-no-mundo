@@ -11,34 +11,28 @@ fetchGifsJsonData("public/data/tsurusGifs.json").then((data) => {
   });
 });
 
-
 const handleBtnClick = (event) => {
-    const gifUuid = event.target.getAttribute('t-gif-uuid');
+  const gifUuid = event.target.getAttribute("t-gif-uuid");
 
-    const tsuruEl = document.querySelector(`[t-uuid="${gifUuid}"]`);
+  const tsuruEl = document.querySelector(`[t-uuid="${gifUuid}"]`);
 
-    tsuruEl.classList.toggle('tsuru--overlay-open');
+  tsuruEl.classList.toggle("tsuru--overlay-open");
 
-    const tsuruGifEl = tsuruEl.querySelector('.tsuru__overlay > [t-overlay-gif-image]');
+  const tsuruGifEl = tsuruEl.querySelector(
+    ".tsuru__overlay > [t-overlay-gif-image]"
+  );
 
-    const thisTsuruGifPath = tsurusGifs.find((g)=>g.uuid === gifUuid).path;
+  const thisTsuruGifPath = tsurusGifs.find((g) => g.uuid === gifUuid).path;
 
-    tsuruGifEl.src = thisTsuruGifPath;
+  tsuruGifEl.src = thisTsuruGifPath;
+};
 
-    console.log({tsuruGifEl});
+const onLoadGifsScript = () => {
+  const gifsBtns = document.querySelectorAll("[t-gif-btn]");
 
-}
+  gifsBtns.forEach((btn) => {
+    btn.addEventListener("click", handleBtnClick);
+  });
+};
 
-
-const onLoadGifsScript = ()=>{
-    const gifsBtns = document.querySelectorAll('[t-gif-btn]');
-
-    console.log({gifsBtns});
-
-    gifsBtns.forEach((btn)=>{
-        btn.addEventListener('click', handleBtnClick);
-    });
-}
-
-
-window.addEventListener('load', onLoadGifsScript);
+window.addEventListener("load", onLoadGifsScript);

@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.13] - 2025-05-04
+
+### Added
+
+- New neighbors to the page
+
+### Changed
+
+- Small visual adjustments on the neighbor section
+
 ## [1.0.12] - 2025-02-25
 
 ### Added
