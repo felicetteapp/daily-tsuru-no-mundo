@@ -1195,6 +1195,34 @@
         "date": {
           "year": "2025",
           "month": "05",
+          "day": "05"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "372f590f-a713-4444-9932-86f646949d25",
+        "image": "372f590f-a713-4444-9932-86f646949d25.webp",
+        "thumbnail": "images/thumbnail/il-372f590f-a713-4444-9932-86f646949d25.webp",
+        "mainColor": "rgb(147,128,110)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "05",
+          "day": "04"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "0a5fa777-c7e1-4988-acf0-afe735c71938",
+        "image": "0a5fa777-c7e1-4988-acf0-afe735c71938.webp",
+        "thumbnail": "images/thumbnail/il-0a5fa777-c7e1-4988-acf0-afe735c71938.webp",
+        "mainColor": "rgb(54,49,41)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "05",
           "day": "03"
         },
         "location": "Curitiba, PR - Brasil",
