@@ -2,3 +2,4 @@ raw_data/
 node_modules/
 _site/
 .npmrc
+.DS_Store

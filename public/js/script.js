@@ -124,7 +124,7 @@ const handleCloseTsuruModal = () => {
 };
 
 const handleTsuruOnClick = (event) => {
-  if(event.target !== event.currentTarget){
+  if (event.target !== event.currentTarget) {
     return;
   }
   const hasATsuruSelected = selectedTsuruUuid !== null;
@@ -277,13 +277,11 @@ const handleTsuruOnClick = (event) => {
       isAnimatingModal = false;
     });
   });
-
-  // animate to size of 500x500
 };
 
 const handleMouseMove = (event) => {
-  const x = event.clientX;
-  const y = event.clientY;
+  const x = Math.round(event.clientX);
+  const y = Math.round(event.clientY);
 
   document.documentElement.style.setProperty("--mouse-x", `${x}px`);
   document.documentElement.style.setProperty("--mouse-y", `${y}px`);

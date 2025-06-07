@@ -897,13 +897,13 @@ body {
     z-index: 9999;
     position: fixed;
     opacity: 0;
-    left: var(--mouse-x);
-    top: var(--mouse-y);
+    left: 0;
+    top: 0;
     color: #1d9fb3;
     width: 15rem;
     height: auto;
     font-size: 4rem;
-    translate: -50% -50%;
+    translate: calc(var(--mouse-x) - 50%) calc(var(--mouse-y) - 50%);
     transition: opacity 0.5s ease-out;
     animation: spin 4s linear infinite;
 
