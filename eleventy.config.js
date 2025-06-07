@@ -4,6 +4,7 @@ import MarkdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import MarkdownItContainer from "markdown-it-container";
 import hljs from "highlight.js";
+import * as esbuild from "esbuild";
 
 const readPackageJsonData = async () => {
   const packageJson = readFileSync("./package.json");
@@ -11,10 +12,21 @@ const readPackageJsonData = async () => {
 };
 
 export default async function (eleventyConfig) {
-  // Configure Eleventy
+  const compiledJs = await esbuild.build({
+    entryPoints: ["src/js/script.ts"],
+    bundle: true,
+    outfile: "public/js/script.js",
+    format: "esm",
+    minify: true,
+    sourcemap: true,
+    target: "es2020",
+    plugins: [],
+  });
+
+  console.log("JavaScript compiled successfully:", compiledJs);
+
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
-  eleventyConfig.addPassthroughCopy({ "public/js": "js" });
   eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
 
   // Add custom MD library to handle more attrs
@@ -36,17 +48,11 @@ export default async function (eleventyConfig) {
 
   const markdownLib = MarkdownIt(mdOptions)
     .use(MarkdownItContainer, "md-flex")
-    .use(MarkdownItContainer, "md-flex-vert", {marker:';' })
+    .use(MarkdownItContainer, "md-flex-vert", { marker: ";" })
     .use(markdownItAttrs)
     .disable("code");
 
   eleventyConfig.setLibrary("md", markdownLib);
-
-  // Add felicette img loading utils bundle
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@felicetteapp/img-loading/dist/bundle.js":
-      "js/img-loading.js",
-  });
 
   // Add markdown-it theme css
   // 'highlight.js/styles/stackoverflow-light.css';
@@ -82,6 +88,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("package.json");
   eleventyConfig.addWatchTarget("CHANGELOG.md");
   eleventyConfig.addWatchTarget("sass/");
-  eleventyConfig.addWatchTarget("public/js/");
+  eleventyConfig.addWatchTarget("src/js/");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 }

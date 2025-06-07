@@ -9,11 +9,12 @@
     "generate:akas": "node utils/akas.cjs",
     "generate:gifs": "node utils/gif.cjs",
     "pre-generate:images": "node utils/pre.cjs",
-    "dev": "concurrently \"npm run watch:sass\" \"eleventy --serve\"",
+    "dev": "concurrently \"npm run watch:sass\" \"eleventy --serve\" \"tsc --noEmit --watch\"",
     "watch:sass": "npx sass sass:_site/css --watch",
     "build:sass": "npx sass sass:_site/css --style=compressed",
     "build:eleventy": "eleventy",
-    "build": "npm run build:sass && npm run build:eleventy"
+    "typecheck": "tsc --noEmit",
+    "build": "npm run build:sass && npm run typecheck && npm run build:eleventy"
   },
   "author": "Facundo Leites",
   "license": "ISC",
@@ -21,7 +22,7 @@
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@felicetteapp/img-loading": "^1.0.2",
+    "@felicetteapp/img-loading": "^1.1.0",
     "@felicetteapp/img-loading-utils": "^0.0.4",
     "@skyra/gifenc": "^1.0.1",
     "canvas-constructor": "^7.0.2",
@@ -34,6 +35,9 @@
     "sass": "^1.83.4",
     "sharp": "^0.33.5",
     "skia-canvas": "^2.0.2",
-    "uuid": "^11.0.5"
-  }
+    "typescript": "^5.8.3",
+    "uuid": "^11.0.5",
+    "esbuild": "^0.25.5"
+  },
+  "dependencies": {}
 }

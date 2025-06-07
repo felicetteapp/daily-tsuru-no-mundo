@@ -1,71 +1,86 @@
-const filteredYears = [];
-const filteredMonths = [];
-const filteredCountries = [];
-const filteredColors = [];
-const filteredCities = [];
+const filteredYears: string[] = [];
+const filteredMonths: string[] = [];
+const filteredCountries: string[] = [];
+const filteredColors: string[] = [];
+const filteredCities: string[] = [];
 let filtersButton, filterToggleButton;
 
-const tsurusGroupedBySimilarColors = [];
+interface TsuruColorData {
+  color: `rgb(${number}, ${number}, ${number})`;
+  average: `rgb(${number}, ${number}, ${number})`;
+  tsurus: string[];
+}
+const tsurusGroupedBySimilarColors: TsuruColorData[] = [];
 
-const fetchJsonData = async (url) => {
+const fetchJsonData = async (url: string) => {
   const response = await fetch(url);
   const data = await response.json();
   return data;
 };
 
 fetchJsonData("public/data/similarColorsUuids.json").then((data) => {
-  data.forEach((color) => {
+  data.forEach((color: TsuruColorData) => {
     tsurusGroupedBySimilarColors.push(color);
   });
 });
 
-const filterNodesByYears = (nodes, years) => {
+const filterNodesByYears = (nodes: Iterable<HTMLElement>, years: string[]) => {
   if (years.length === 0) {
     return nodes;
   }
   const filteredNodes = Array.from(nodes).filter((node) => {
-    return years.includes(node.getAttribute("t-date-year"));
+    return years.includes(node.getAttribute("t-date-year") ?? "");
   });
   return filteredNodes;
 };
 
-const filterNodesByMonths = (nodes, months) => {
+const filterNodesByMonths = (
+  nodes: Iterable<HTMLElement>,
+  months: string[]
+) => {
   if (months.length === 0) {
     return nodes;
   }
   const filteredNodes = Array.from(nodes).filter((node) => {
-    return months.includes(node.getAttribute("t-date-month"));
+    return months.includes(node.getAttribute("t-date-month") ?? "");
   });
   return filteredNodes;
 };
 
-const filterNodesByCountries = (nodes, countries) => {
+const filterNodesByCountries = (
+  nodes: Iterable<HTMLElement>,
+  countries: string[]
+) => {
   if (countries.length === 0) {
     return nodes;
   }
   const filteredNodes = Array.from(nodes).filter((node) => {
-    const splitedLocation = node.getAttribute("t-location").split("-");
+    const splitedLocation = node.getAttribute("t-location")?.split("-") ?? [];
     const thisNodeCountry = splitedLocation[splitedLocation.length - 1].trim();
     return countries.includes(thisNodeCountry);
   });
   return filteredNodes;
 };
 
-const filterNodesByCities = (nodes, cities) => {
+const filterNodesByCities = (
+  nodes: Iterable<HTMLElement>,
+  cities: string[]
+) => {
   if (cities.length === 0) {
     return nodes;
   }
   const filteredNodes = Array.from(nodes).filter((node) => {
-    const location = node.getAttribute("t-location");
+    const location = node.getAttribute("t-location") ?? "";
 
-    return cities.some(
-        (city)=> location.includes(city)
-    )
+    return cities.some((city) => location.includes(city));
   });
   return filteredNodes;
 };
 
-const filterNodesByColors = (nodes, colors) => {
+const filterNodesByColors = (
+  nodes: Iterable<HTMLElement>,
+  colors: string[]
+) => {
   if (colors.length === 0) {
     return nodes;
   }
@@ -76,18 +91,19 @@ const filterNodesByColors = (nodes, colors) => {
         ({ color: iColor }) => iColor === color
       );
 
-      return thisColorData.tsurus.includes(node.getAttribute("t-uuid"));
+      return thisColorData?.tsurus.includes(node.getAttribute("t-uuid") ?? "");
     });
   });
   return filteredNodes;
 };
 
-const handleFilterButtonClick = (event) => {
-  const type = event.target.getAttribute("t-filter-type");
-  const value = event.target.getAttribute("t-filter-value");
-  const allTsurus = document.querySelectorAll("[t-item]");
+const handleFilterButtonClick = (event: MouseEvent) => {
+  const targetElement = event.target as HTMLElement;
+  const type: string = targetElement.getAttribute("t-filter-type") || "";
+  const value: string = targetElement.getAttribute("t-filter-value") || "";
+  const allTsurus = document.querySelectorAll<HTMLElement>("[t-item]");
 
-  event.target.classList.toggle("filter--active");
+  targetElement.classList.toggle("filter--active");
 
   if (type === "year") {
     filteredYears.includes(value)
@@ -139,16 +155,14 @@ const handleFilterButtonClick = (event) => {
     tsuru.style.display = "none";
   });
 
-  filteredByColors.forEach((tsuru) => {
+  Array.from(filteredByColors).forEach((tsuru) => {
     tsuru.style.display = "";
   });
 
-  document.documentElement.scrollTo(
-    {
-        top: 0,
-        behavior: "smooth"
-    }
-  )
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 
 const handleFilterToggle = () => {
@@ -156,8 +170,15 @@ const handleFilterToggle = () => {
 };
 
 const handleFiltersOnLoad = () => {
-  filtersButton = document.querySelectorAll("[t-filter-btn]");
-  filterToggleButton = document.querySelector("[t-filter-toggle-btn]");
+  filtersButton =
+    document.querySelectorAll<HTMLButtonElement>("[t-filter-btn]");
+  filterToggleButton = document.querySelector<HTMLButtonElement>(
+    "[t-filter-toggle-btn]"
+  );
+
+  if (!filtersButton || !filterToggleButton) {
+    return;
+  }
 
   filterToggleButton.addEventListener("click", handleFilterToggle);
 
