@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.0.14] - 2025-06-07
+
+### Changed
+
+- Small visual adjustments on the tsuru list section
+
 ## [1.0.13] - 2025-05-04
 
 ### Added

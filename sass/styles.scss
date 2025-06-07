@@ -504,14 +504,59 @@ body {
     pointer-events: none;
   }
 
+  $parent: &;
+  &__list {
+    &:has(#{$parent}__container:hover) {
+      #{$parent} {
+        &__container {
+          &:not(:hover) {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
   &__container {
-    scale: 1;
     background: rgba(#fff, 0);
-    transition: background 0.5s, scale 0.5s;
+    transition: all 0.25s ease-in-out;
+
+    @include non-mobile {
+      #{$parent} {
+        &__caption {
+          &__actions {
+            button {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+
     &:hover {
       background: rgba(#fff, 0.1);
       cursor: pointer;
-      scale: 1.01;
+
+      @include non-mobile {
+        width: calc(100% + 1rem);
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-top: -0.5rem;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.5rem;
+      }
+
+      #{$parent} {
+        &__caption {
+          &__actions {
+            button {
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -563,7 +608,7 @@ body {
         border: none;
         outline: none;
         background: transparent;
-        padding: 0.5rem 1rem;
+        padding: 0.25rem 1rem;
 
         svg {
           width: 1.5rem;
@@ -860,6 +905,7 @@ body {
     left: 0;
     top: 0;
     pointer-events: none;
+    transition: transform 0.125s linear, height 0.125s linear;
   }
 }
 
