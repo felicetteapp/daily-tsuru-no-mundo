@@ -72,14 +72,16 @@ const handleCloseTsuruModal = () => {
   const modalImgAnimation = modalImgEl.animate(
     [
       {
-        top: "0",
-        left: "0",
+        transform: "translateX(0) translateY(0)",
         width: "100dvw",
         height: "100dvh",
       },
       {
-        top: `${positionRelativeToViewport.top - heightDifference / 2}px`,
-        left: `${positionRelativeToViewport.left}px`,
+        transform: `translateX(${
+          positionRelativeToViewport.left
+        }px) translateY(${
+          positionRelativeToViewport.top - heightDifference / 2
+        }px)`,
         width: `${positionRelativeToViewport.width}px`,
         height: `${expectedHeightFromAspectRatio}px`,
       },
@@ -97,14 +99,16 @@ const handleCloseTsuruModal = () => {
     const secondModalImgAnimation = modalImgEl.animate(
       [
         {
-          top: `${positionRelativeToViewport.top - heightDifference / 2}px`,
-          left: `${positionRelativeToViewport.left}px`,
+          transform: `translateX(${
+            positionRelativeToViewport.left
+          }px) translateY(${
+            positionRelativeToViewport.top - heightDifference / 2
+          }px)`,
           width: `${positionRelativeToViewport.width}px`,
           height: `${expectedHeightFromAspectRatio}px`,
         },
         {
-          top: `${positionRelativeToViewport.top}px`,
-          left: `${positionRelativeToViewport.left}px`,
+          transform: `translateX(${positionRelativeToViewport.left}px) translateY(${positionRelativeToViewport.top}px)`,
           width: `${positionRelativeToViewport.width}px`,
           height: `${positionRelativeToViewport.height}px`,
         },
@@ -224,14 +228,16 @@ const handleTsuruOnClick = (event) => {
   const animation = modalImgEl.animate(
     [
       {
-        top: `${positionRelativeToViewport.top}px`,
-        left: `${positionRelativeToViewport.left}px`,
         width: `${positionRelativeToViewport.width}px`,
         height: `${positionRelativeToViewport.height}px`,
+        transform: `translateX(${positionRelativeToViewport.left}px) translateY(${positionRelativeToViewport.top}px)`,
       },
       {
-        top: `${positionRelativeToViewport.top - heightDifference / 2}px`,
-        left: `${positionRelativeToViewport.left}px`,
+        transform: `translateX(${
+          positionRelativeToViewport.left
+        }px) translateY(${
+          positionRelativeToViewport.top - heightDifference / 2
+        }px)`,
         width: `${positionRelativeToViewport.width}px`,
         height: `${expectedHeightFromAspectRatio}px`,
       },
@@ -252,14 +258,16 @@ const handleTsuruOnClick = (event) => {
     const modalImgAnimation = modalImgEl.animate(
       [
         {
-          top: `${positionRelativeToViewport.top - heightDifference / 2}px`,
-          left: `${positionRelativeToViewport.left}px`,
           width: `${positionRelativeToViewport.width}px`,
           height: `${expectedHeightFromAspectRatio}px`,
+          transform: `translateX(${
+            positionRelativeToViewport.left
+          }px) translateY(${
+            positionRelativeToViewport.top - heightDifference / 2
+          }px)`,
         },
         {
-          top: "0",
-          left: "0",
+          transform: "translateX(0) translateY(0)",
           width: "100dvw",
           height: "100dvh",
         },
