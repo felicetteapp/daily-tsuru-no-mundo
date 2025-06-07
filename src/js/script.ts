@@ -11,10 +11,6 @@ const clearAllSelectedTsuru = () => {
   });
 };
 
-const teste: number = 12;
-
-console.log("3");
-
 const handleCloseTsuruModal = () => {
   if (isAnimatingModal || selectedTsuruUuid === null) {
     return;

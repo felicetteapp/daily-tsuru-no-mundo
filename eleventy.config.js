@@ -12,7 +12,7 @@ const readPackageJsonData = async () => {
 };
 
 export default async function (eleventyConfig) {
-  const compiledJs = await esbuild.build({
+  await esbuild.build({
     entryPoints: ["src/js/script.ts"],
     bundle: true,
     outfile: "public/js/script.js",
@@ -23,10 +23,9 @@ export default async function (eleventyConfig) {
     plugins: [],
   });
 
-  console.log("JavaScript compiled successfully:", compiledJs);
-
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "public/js": "js" });
   eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
 
   // Add custom MD library to handle more attrs
