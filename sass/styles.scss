@@ -42,6 +42,64 @@ a {
   }
 }
 
+// felicette img-loading styles
+
+// prefix = il
+.il {
+  $prefix: &;
+  &-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    background: var(--il-main-color);
+
+    &[img-loading-me] {
+      display: inline-block !important;
+    }
+
+    #{$prefix}-img,
+    #{$prefix}-thumbnail {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+      opacity: 0;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    #{$prefix}-thumbnail {
+      transition: opacity 1s, transform 1s, filter 1s;
+      filter: blur(20px);
+      transform: scale(1.2);
+    }
+
+    &--thumbnail-loaded {
+      #{$prefix}-thumbnail {
+        opacity: 1;
+        filter: blur(10px);
+        transform: scale(1.1);
+      }
+    }
+
+    &--img-loaded {
+      #{$prefix}-img {
+        opacity: 1;
+      }
+
+      #{$prefix}-thumbnail {
+        opacity: 0;
+        transform: scale(1);
+        filter: blur(0);
+        pointer-events: none;
+      }
+    }
+  }
+}
+
 html {
   max-width: 100dvw;
   max-height: 100dvh;
@@ -383,6 +441,13 @@ body {
     width: var(--column-width);
     display: inline-block;
     margin-right: 1rem;
+
+    .il-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
 
     &:first-child {
       margin-left: 1rem;
@@ -825,64 +890,6 @@ body {
   }
 }
 
-// felicette img-loading styles
-
-// prefix = il
-.il {
-  $prefix: &;
-  &-item {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 3/4;
-    background: var(--il-main-color);
-
-    &[img-loading-me] {
-      display: inline-block !important;
-    }
-
-    #{$prefix}-img,
-    #{$prefix}-thumbnail {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: auto;
-      display: block;
-      opacity: 0;
-      max-height: 100%;
-      object-fit: cover;
-    }
-
-    #{$prefix}-thumbnail {
-      transition: opacity 1s, transform 1s, filter 1s;
-      filter: blur(20px);
-      transform: scale(1.2);
-    }
-
-    &--thumbnail-loaded {
-      #{$prefix}-thumbnail {
-        opacity: 1;
-        filter: blur(10px);
-        transform: scale(1.1);
-      }
-    }
-
-    &--img-loaded {
-      #{$prefix}-img {
-        opacity: 1;
-      }
-
-      #{$prefix}-thumbnail {
-        opacity: 0;
-        transform: scale(1);
-        filter: blur(0);
-        pointer-events: none;
-      }
-    }
-  }
-}
-
 // modal
 
 .modal {
@@ -898,14 +905,13 @@ body {
 
   &__image {
     background-image: var(--modal-img-src);
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
     top: 0;
     pointer-events: none;
-    transition: transform 0.125s linear, height 0.125s linear;
   }
 }
 

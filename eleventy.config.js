@@ -10,14 +10,13 @@ const readPackageJsonData = async () => {
   return JSON.parse(packageJson);
 };
 
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
-  // Configure Eleventy
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
   eleventyConfig.addPassthroughCopy({ "public/js": "js" });
   eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
 
-  // Add custom MD library to handle more attrs
   const mdOptions = {
     html: true,
     breaks: true,
@@ -36,20 +35,11 @@ export default async function (eleventyConfig) {
 
   const markdownLib = MarkdownIt(mdOptions)
     .use(MarkdownItContainer, "md-flex")
-    .use(MarkdownItContainer, "md-flex-vert", {marker:';' })
+    .use(MarkdownItContainer, "md-flex-vert", { marker: ";" })
     .use(markdownItAttrs)
     .disable("code");
 
   eleventyConfig.setLibrary("md", markdownLib);
-
-  // Add felicette img loading utils bundle
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@felicetteapp/img-loading/dist/bundle.js":
-      "js/img-loading.js",
-  });
-
-  // Add markdown-it theme css
-  // 'highlight.js/styles/stackoverflow-light.css';
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/highlight.js/styles/tokyo-night-dark.css":
@@ -82,6 +72,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("package.json");
   eleventyConfig.addWatchTarget("CHANGELOG.md");
   eleventyConfig.addWatchTarget("sass/");
-  eleventyConfig.addWatchTarget("public/js/");
+  eleventyConfig.addWatchTarget("public/js/script.js");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 }
