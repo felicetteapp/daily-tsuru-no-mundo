@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.1.0] - 2025-06-08
+
+### Added
+- Typescript support to the project
+
+### Changed
+- Improved animation performance on the modals
+
 ## [1.0.14] - 2025-06-07
 
 ### Changed
