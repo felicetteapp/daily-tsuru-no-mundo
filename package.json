@@ -9,12 +9,14 @@
     "generate:akas": "node utils/akas.cjs",
     "generate:gifs": "node utils/gif.cjs",
     "pre-generate:images": "node utils/pre.cjs",
-    "dev": "concurrently \"npm run watch:sass\" \"eleventy --serve\" \"tsc --noEmit --watch\"",
-    "watch:sass": "npx sass sass:_site/css --watch",
+    "dev": "concurrently \"npm run watch:sass\" \"npm run watch:esbuild\" \"eleventy --serve\" \"tsc --noEmit --watch\"",
     "build:sass": "npx sass sass:_site/css --style=compressed",
+    "build:esbuild": "esbuild src/js/script.ts --bundle --outfile=public/js/script.js --format=esm --minify --sourcemap --target=es2020",
     "build:eleventy": "eleventy",
     "typecheck": "tsc --noEmit",
-    "build": "npm run build:sass && npm run typecheck && npm run build:eleventy"
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "watch:esbuild": "esbuild src/js/script.ts --bundle --outfile=public/js/script.js --format=esm --minify --sourcemap --target=es2020 --watch",
+    "build": "npm run build:sass && npm run typecheck && npm run build:esbuild && npm run build:eleventy"
   },
   "author": "Facundo Leites",
   "license": "ISC",

@@ -196,8 +196,6 @@ const handleTsuruOnClick = (event: MouseEvent) => {
 
   const widthWithModalOpen = document.documentElement.clientWidth;
 
-  console.log(widthWithoutModalOpen, widthWithModalOpen);
-
   if (widthWithoutModalOpen !== widthWithModalOpen) {
     document.documentElement.style.setProperty(
       "--scroll-width",

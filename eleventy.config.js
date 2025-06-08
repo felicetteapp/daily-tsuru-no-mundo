@@ -4,31 +4,19 @@ import MarkdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import MarkdownItContainer from "markdown-it-container";
 import hljs from "highlight.js";
-import * as esbuild from "esbuild";
 
 const readPackageJsonData = async () => {
   const packageJson = readFileSync("./package.json");
   return JSON.parse(packageJson);
 };
 
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
-  await esbuild.build({
-    entryPoints: ["src/js/script.ts"],
-    bundle: true,
-    outfile: "public/js/script.js",
-    format: "esm",
-    minify: true,
-    sourcemap: true,
-    target: "es2020",
-    plugins: [],
-  });
-
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
   eleventyConfig.addPassthroughCopy({ "public/js": "js" });
   eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
 
-  // Add custom MD library to handle more attrs
   const mdOptions = {
     html: true,
     breaks: true,
@@ -52,9 +40,6 @@ export default async function (eleventyConfig) {
     .disable("code");
 
   eleventyConfig.setLibrary("md", markdownLib);
-
-  // Add markdown-it theme css
-  // 'highlight.js/styles/stackoverflow-light.css';
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/highlight.js/styles/tokyo-night-dark.css":
@@ -87,6 +72,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("package.json");
   eleventyConfig.addWatchTarget("CHANGELOG.md");
   eleventyConfig.addWatchTarget("sass/");
-  eleventyConfig.addWatchTarget("src/js/");
+  eleventyConfig.addWatchTarget("public/js/script.js");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 }
