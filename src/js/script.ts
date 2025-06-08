@@ -85,12 +85,24 @@ const handleCloseTsuruModal = () => {
   const heightDifference =
     expectedHeightFromAspectRatio - positionRelativeToViewport.height;
 
+  const isVertical = window.innerHeight < window.innerWidth;
+
+  const startSize = {
+    width: isVertical ? window.innerHeight * aspectRatio : window.innerWidth,
+    height: isVertical ? window.innerHeight : window.innerWidth / aspectRatio,
+  };
+
+  const startPosition = {
+    left: (window.innerWidth - startSize.width) / 2,
+    top: (window.innerHeight - startSize.height) / 2,
+  };
+
   const modalImgAnimation = modalImgEl.animate(
     [
       {
-        transform: "translateX(0) translateY(0)",
-        width: "100dvw",
-        height: "100dvh",
+        transform: `translateX(${startPosition.left}px) translateY(${startPosition.top}px)`,
+        width: `${startSize.width}px`,
+        height: `${startSize.height}px`,
       },
       {
         transform: `translateX(${
@@ -110,6 +122,8 @@ const handleCloseTsuruModal = () => {
   );
 
   modalImgAnimation.finished.then(() => {
+    modalImgAnimation.commitStyles();
+    modalImgAnimation.cancel();
     modalImgEl.style.backgroundSize = "cover";
 
     const secondModalImgAnimation = modalImgEl.animate(
@@ -282,6 +296,18 @@ const handleTsuruOnClick = (event: MouseEvent) => {
 
     modalImgEl.style.backgroundSize = "";
 
+    const isVertical = window.innerHeight < window.innerWidth;
+
+    const targetSize = {
+      width: isVertical ? window.innerHeight * aspectRatio : window.innerWidth,
+      height: isVertical ? window.innerHeight : window.innerWidth / aspectRatio,
+    };
+
+    const targetPosition = {
+      left: (window.innerWidth - targetSize.width) / 2,
+      top: (window.innerHeight - targetSize.height) / 2,
+    };
+
     const modalImgAnimation = modalImgEl.animate(
       [
         {
@@ -294,9 +320,9 @@ const handleTsuruOnClick = (event: MouseEvent) => {
           }px)`,
         },
         {
-          transform: "translateX(0) translateY(0)",
-          width: "100dvw",
-          height: "100dvh",
+          transform: `translateX(${targetPosition.left}px) translateY(${targetPosition.top}px)`,
+          width: targetSize.width + "px",
+          height: targetSize.height + "px",
         },
       ],
       {
@@ -307,8 +333,11 @@ const handleTsuruOnClick = (event: MouseEvent) => {
     );
 
     modalImgAnimation.finished.then(() => {
-      animation.commitStyles();
-      animation.cancel();
+      modalImgAnimation.commitStyles();
+      modalImgAnimation.cancel();
+      modalImgEl.style.transform = `translateX(0) translateY(0)`;
+      modalImgEl.style.width = "100dvw";
+      modalImgEl.style.height = "100dvh";
       isAnimatingModal = false;
     });
   });
