@@ -44,6 +44,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "node_modules/highlight.js/styles/tokyo-night-dark.css":
       "css/highlight.css",
+    "node_modules/lenis/dist/lenis.css": "css/lenis.css",
   });
 
   // Add public json data

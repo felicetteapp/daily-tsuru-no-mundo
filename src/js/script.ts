@@ -1,6 +1,10 @@
 import { ImgLoading } from "@felicetteapp/img-loading";
 import "./gifs";
 import "./filters";
+import Lenis from "lenis";
+
+const lenis = new Lenis();
+
 let selectedTsuruUuid: string | null = null;
 let isAnimatingModal = false;
 
@@ -72,6 +76,7 @@ const handleCloseTsuruModal = () => {
     )
     .finished.then(() => {
       document.body.classList.remove("modal--open");
+      lenis.start();
       selectedTsuruUuid = null;
       clearAllSelectedTsuru();
       isAnimatingModal = false;
@@ -193,6 +198,7 @@ const handleTsuruOnClick = (event: MouseEvent) => {
   );
 
   document.body.classList.add("modal--open");
+  lenis.stop();
   tsuruEl.classList.add("tsuru--selected");
 
   const widthWithModalOpen = document.documentElement.clientWidth;
@@ -311,6 +317,13 @@ const onLoad = () => {
   anotherImgLoading.init("[img-loading-me]", {
     container: document.body,
   });
+
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 };
 
 window.addEventListener("load", onLoad);
