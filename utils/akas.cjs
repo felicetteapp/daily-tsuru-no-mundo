@@ -21,6 +21,7 @@ const translatedToPortugueseCountries = {
   Nederland: { name: "Paises Baixos", genre: "M", number: "P" },
   Uruguay: { name: "Uruguai", genre: "M", number: "S" },
   Türkiye: { name: "Turquia", genre: "F", number: "S" },
+  Portugal: { name: "Portugal", genre: "M", number: "S" },
 };
 
 const translatedToPortugueseCities = {
@@ -57,6 +58,7 @@ const translatedToPortugueseCities = {
   "São Paulo": { name: "São Paulo", genre: "N", number: "S" },
   Ushuaia: { name: "Ushuaia", genre: "N", number: "S" },
   "Viña del Mar": { name: "Viña del Mar", genre: "N", number: "S" },
+  Lisboa: { name: "Lisboa", genre: "N", number: "S" },
 };
 
 const getCountryDataAsJson = () => {

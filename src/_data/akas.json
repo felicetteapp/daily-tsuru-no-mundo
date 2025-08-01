@@ -36,6 +36,11 @@
       "number": "P"
     },
     {
+      "name": "Portugal",
+      "genre": "M",
+      "number": "S"
+    },
+    {
       "name": "Turquia",
       "genre": "F",
       "number": "S"
@@ -84,6 +89,11 @@
     },
     {
       "name": "Isla Martillo",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Lisboa",
       "genre": "N",
       "number": "S"
     },

@@ -90,6 +90,8 @@ const countriesFlags = {
   Deutschland: "🇩🇪",
   Nederland: "🇳🇱",
   Uruguay: "🇺🇾",
+  Türkiye: "🇹🇷",
+  Portugal: "🇵🇹",
 };
 
 // grouped by country
