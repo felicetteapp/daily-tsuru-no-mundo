@@ -63,6 +63,11 @@
       "number": "S"
     },
     {
+      "name": "Bombinhas",
+      "genre": "N",
+      "number": "S"
+    },
+    {
       "name": "Campina Grande do Sul",
       "genre": "N",
       "number": "S"
@@ -89,6 +94,11 @@
     },
     {
       "name": "Isla Martillo",
+      "genre": "N",
+      "number": "S"
+    },
+    {
+      "name": "Itapema",
       "genre": "N",
       "number": "S"
     },

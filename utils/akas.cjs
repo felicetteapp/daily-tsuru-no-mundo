@@ -61,6 +61,8 @@ const translatedToPortugueseCities = {
   Lisboa: { name: "Lisboa", genre: "N", number: "S" },
   Salvador: { name: "Salvador", genre: "N", number: "S" },
   Paraty: { name: "Paraty", genre: "N", number: "S" },
+  Bombinhas: { name: "Bombinhas", genre: "N", number: "S" },
+  Itapema: { name: "Itapema", genre: "N", number: "S" },
 };
 
 const getCountryDataAsJson = () => {
