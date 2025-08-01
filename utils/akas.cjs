@@ -60,6 +60,7 @@ const translatedToPortugueseCities = {
   "Viña del Mar": { name: "Viña del Mar", genre: "N", number: "S" },
   Lisboa: { name: "Lisboa", genre: "N", number: "S" },
   Salvador: { name: "Salvador", genre: "N", number: "S" },
+  Paraty: { name: "Paraty", genre: "N", number: "S" },
 };
 
 const getCountryDataAsJson = () => {
