@@ -20,9 +20,9 @@ const getImageWithMetadata = async (webpImage) => {
   const cropped = await sharpImg
     .extract({
       left: 0,
-      top: (originalMetadata.height - expectedHeight) / 2,
+      top: Math.round((originalMetadata.height - expectedHeight) / 2),
       width: originalMetadata.width,
-      height: expectedHeight,
+      height: Math.round(expectedHeight),
     })
     .toBuffer();
 
@@ -89,7 +89,6 @@ const generateGif = async (input) => {
 
   return new Promise((resolve) => {
     buffer(stream).then((result) => {
-
       const outputPath = path.join(
         __dirname,
         "..",
@@ -120,14 +119,12 @@ if (!gifsJsonExists) {
 const currentGifsJsonRawDta = fs.readFileSync(pathToGifsJson);
 const currentGifsJsonData = JSON.parse(currentGifsJsonRawDta);
 
-
-
 const tsurus = tsurusJsonData.filter((t) => {
-    const thisTsuruUuidExists = currentGifsJsonData.some((g) => {
-        return g.uuid === t.uuid;
-    });
-    
-    return !thisTsuruUuidExists;
+  const thisTsuruUuidExists = currentGifsJsonData.some((g) => {
+    return g.uuid === t.uuid;
+  });
+
+  return !thisTsuruUuidExists;
 });
 
 const generateGifsFromTsurus = async () => {
@@ -137,8 +134,10 @@ const generateGifsFromTsurus = async () => {
     generated.push(await generateGif(tsuru));
   }
 
-  fs.writeFileSync
-  (pathToGifsJson, JSON.stringify([...currentGifsJsonData, ...generated], null, 2));
+  fs.writeFileSync(
+    pathToGifsJson,
+    JSON.stringify([...currentGifsJsonData, ...generated], null, 2)
+  );
 };
 
 generateGifsFromTsurus();
