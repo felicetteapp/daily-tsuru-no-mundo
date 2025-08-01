@@ -59,6 +59,7 @@ const translatedToPortugueseCities = {
   Ushuaia: { name: "Ushuaia", genre: "N", number: "S" },
   "Viña del Mar": { name: "Viña del Mar", genre: "N", number: "S" },
   Lisboa: { name: "Lisboa", genre: "N", number: "S" },
+  Salvador: { name: "Salvador", genre: "N", number: "S" },
 };
 
 const getCountryDataAsJson = () => {
