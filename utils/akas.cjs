@@ -20,6 +20,7 @@ const translatedToPortugueseCountries = {
   Deutschland: { name: "Alemanha", genre: "F", number: "S" },
   Nederland: { name: "Paises Baixos", genre: "M", number: "P" },
   Uruguay: { name: "Uruguai", genre: "M", number: "S" },
+  Türkiye: { name: "Turquia", genre: "F", number: "S" },
 };
 
 const translatedToPortugueseCities = {
@@ -30,6 +31,12 @@ const translatedToPortugueseCities = {
     genre: "N",
     number: "S",
   },
+  "İstanbul Havalimanı": {
+    name: "Aeroporto de Istambul",
+    genre: "N",
+    number: "S",
+  },
+  "Rio Claro": { name: "Rio Claro", genre: "N", number: "S" },
   Carrasco: { name: "Carrasco", genre: "N", number: "S" },
   Curitiba: { name: "Curitiba", genre: "N", number: "S" },
   Duisburg: { name: "Duisburg", genre: "N", number: "S" },
