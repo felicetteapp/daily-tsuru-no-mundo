@@ -76,7 +76,6 @@ const handleCloseTsuruModal = () => {
     )
     .finished.then(() => {
       document.body.classList.remove("modal--open");
-      lenis.start();
       selectedTsuruUuid = null;
       clearAllSelectedTsuru();
       isAnimatingModal = false;
@@ -86,7 +85,6 @@ const handleCloseTsuruModal = () => {
   const aspectRatio =
     Number(parsedAspectRatio[0]) / Number(parsedAspectRatio[1]);
 
-  const isVertical = window.innerHeight < window.innerWidth;
   const targetSize = calculateTargetSize(aspectRatio);
 
   const targetPosition = {
@@ -198,7 +196,7 @@ const handleTsuruOnClick = (event: MouseEvent) => {
   );
 
   document.body.classList.add("modal--open");
-  lenis.stop();
+
   tsuruEl.classList.add("tsuru--selected");
 
   const widthWithModalOpen = document.documentElement.clientWidth;
