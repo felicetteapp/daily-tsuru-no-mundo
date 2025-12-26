@@ -3,28 +3,27 @@ layout: baselayout.njk
 ---
 
 
-<div class="tsuru__list">
-  {% for post in tsurus %}
-    <div
-      class="tsuru__container"
-      t-item
-      t-location="{{post.location}}"
-      t-uuid="{{post.uuid}}"
-      t-date-year="{{post.date.year}}"
-      t-date-month="{{post.date.month}}"
-      t-date-day="{{post.date.day}}"
-      t-main-color="{{ post.mainColor }}">
-      <div class="tsuru">
-        <div
-          img-loading
-          il-uuid="{{post.uuid}}"
-          il-thumbnail="{{post.thumbnail}}"
-          il-fullsize="images/{{post.image}}"
-          il-width="{{post.width}}"
-          il-height="{{post.height}}"
-          il-aspect-ratio="{{post.width}}/{{post.height}}"
-          il-main-color="{{post.mainColor}}"
-          style="
+{% for post in tsurus %}
+  <div
+    class="tsuru__container"
+    t-item
+    t-location="{{post.location}}"
+    t-uuid="{{post.uuid}}"
+    t-date-year="{{post.date.year}}"
+    t-date-month="{{post.date.month}}"
+    t-date-day="{{post.date.day}}"
+    t-main-color="{{ post.mainColor }}">
+    <div class="tsuru">
+      <div
+        img-loading
+        il-uuid="{{post.uuid}}"
+        il-thumbnail="{{post.thumbnail}}"
+        il-fullsize="images/{{post.image}}"
+        il-width="{{post.width}}"
+        il-height="{{post.height}}"
+        il-aspect-ratio="{{post.width}}/{{post.height}}"
+        il-main-color="{{post.mainColor}}"
+        style="
             max-width: 100%;
             max-height: 100%;
             width: {{post.width}}px;
@@ -34,26 +33,25 @@ layout: baselayout.njk
             overflow: hidden;
           ">
 </div>
-        <main class="tsuru__caption">
-          <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
-          <h4 class="tsuru__caption__location">{{ post.location }}</h4>
-          <div class="tsuru__caption__actions">
-            <button t-gif-btn t-gif-uuid="{{post.uuid}}">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-              </svg>
-            </button>
-          </div>
-        </main>
-        <div class="tsuru__overlay">
-          <img
-            t-overlay-gif-image
-            width="88"
-            height="31" />
-          <p>You can download and share this GIF anywhere you want. If you add it to your site let me know, I would love 
-          to see it! 😊</p>
+      <main class="tsuru__caption">
+        <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
+        <h4 class="tsuru__caption__location">{{ post.location }}</h4>
+        <div class="tsuru__caption__actions">
+          <button t-gif-btn t-gif-uuid="{{post.uuid}}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+            </svg>
+          </button>
         </div>
+      </main>
+      <div class="tsuru__overlay">
+        <img
+          t-overlay-gif-image
+          width="88"
+          height="31" />
+        <p>You can download and share this GIF anywhere you want. If you add it to your site let me know, I would love  
+          to see it! 😊</p>
       </div>
     </div>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}

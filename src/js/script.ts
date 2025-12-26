@@ -155,6 +155,7 @@ const handleTsuruOnClick = (event: MouseEvent) => {
   if (hasATsuruSelected || isAnimatingModal) {
     return;
   }
+
   const widthWithoutModalOpen = document.documentElement.clientWidth;
   const scrollBarWidth =
     window.innerWidth - document.documentElement.clientWidth;

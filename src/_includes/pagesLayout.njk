@@ -19,17 +19,19 @@ title: Tsuru No Mundo - Daily
             href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
             rel="stylesheet">
         <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-        <script src="../js/img-loading.js"></script>
-        <script src="../js/script.js" defer></script>
+        <script src="../js/script.js" type="module" defer></script>
     </head>
-    <body>
-        {% include '_header.liquid' %}
-        {% include '_about.liquid' %}
-        {% include '_donate.liquid' %}
+    <body class="body__page">
+        <section class="body__info">
+            {% include '_header.liquid' %}
+        </section>
         {{ content | safe }}
-        {% include '_me.liquid' %}
-        {% include '_changeLog.liquid' %}
-        {% include '_neighbors.liquid' %}
-        {% include '_footer.liquid' %}
+        <div class="body__footer">
+            {% include '_donate.liquid' %}
+            {% include '_about.liquid' %}
+            {% include '_me.liquid' %}
+            {% include '_neighbors.liquid' %}
+            {% include '_footer.liquid' %}
+        </div>
     </body>
 </html>

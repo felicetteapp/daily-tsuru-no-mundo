@@ -167,6 +167,13 @@ const handleFilterButtonClick = (event: MouseEvent) => {
 
 const handleFilterToggle = () => {
   document.body.classList.toggle("filter--open");
+
+  if (document.body.classList.contains("filter--open")) {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 };
 
 const handleFiltersOnLoad = () => {

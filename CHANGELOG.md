@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-12-26
+### Changed
+- Visual improvements to the entire site. The grid of tsurus now fill the entire width of the screen
+
 ## [1.1.2] - 2025-09-08
 
 ### Changed
