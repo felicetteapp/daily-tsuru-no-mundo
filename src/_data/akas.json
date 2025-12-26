@@ -89,12 +89,17 @@
     },
     {
       "name": "Estancia Harberton",
-      "genre": "N",
+      "genre": "F",
+      "number": "S"
+    },
+    {
+      "name": "Estrada da Graciosa",
+      "genre": "F",
       "number": "S"
     },
     {
       "name": "Isla Martillo",
-      "genre": "N",
+      "genre": "F",
       "number": "S"
     },
     {
@@ -179,7 +184,7 @@
     },
     {
       "name": "Aeroporto de Istambul",
-      "genre": "N",
+      "genre": "M",
       "number": "S"
     }
   ]
