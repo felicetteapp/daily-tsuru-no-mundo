@@ -68,6 +68,11 @@ const translatedToPortugueseCities = {
     genre: "N",
     number: "S",
   },
+  "Ciudad Autonoma de Buenos Aires": {
+    name: "Ciudad Autonoma de Buenos Aires",
+    genre: "N",
+    number: "S",
+  },
 };
 
 const getCountryDataAsJson = () => {
