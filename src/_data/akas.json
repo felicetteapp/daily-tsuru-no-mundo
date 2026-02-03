@@ -93,7 +93,9 @@
       "number": "S"
     },
     {
-      "name": "Estrada da Graciosa"
+      "name": "Estrada da Graciosa",
+      "genre": "N",
+      "number": "S"
     },
     {
       "name": "Isla Martillo",

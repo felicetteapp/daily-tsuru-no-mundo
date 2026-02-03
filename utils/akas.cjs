@@ -3,12 +3,12 @@ const path = require("path");
 
 const groupedByCountryDataFilePath = path.join(
   __dirname,
-  "../src/_data/groupedByCountry.json"
+  "../src/_data/groupedByCountry.json",
 );
 
 const groupedByCityDataFilePath = path.join(
   __dirname,
-  "../src/_data/groupedByCity.json"
+  "../src/_data/groupedByCity.json",
 );
 
 const translatedToPortugueseCountries = {
@@ -63,6 +63,11 @@ const translatedToPortugueseCities = {
   Paraty: { name: "Paraty", genre: "N", number: "S" },
   Bombinhas: { name: "Bombinhas", genre: "N", number: "S" },
   Itapema: { name: "Itapema", genre: "N", number: "S" },
+  "Estrada da Graciosa": {
+    name: "Estrada da Graciosa",
+    genre: "N",
+    number: "S",
+  },
 };
 
 const getCountryDataAsJson = () => {
@@ -71,16 +76,16 @@ const getCountryDataAsJson = () => {
 };
 
 const allAvailableCountries = getCountryDataAsJson().availableCountries.map(
-  ({ name }) => name
+  ({ name }) => name,
 );
 
 const missingTranslations = allAvailableCountries.filter(
-  (country) => !translatedToPortugueseCountries[country]
+  (country) => !translatedToPortugueseCountries[country],
 );
 
 console.warn(
   "Missing translations for the following countries:",
-  missingTranslations
+  missingTranslations,
 );
 
 const countriesWithTranslation = allAvailableCountries.map((country) => {
@@ -99,12 +104,12 @@ const getCityDataAsJson = () => {
 const allAvailableCities = getCityDataAsJson().availableCities;
 
 const missingCityTranslations = allAvailableCities.filter(
-  (city) => !translatedToPortugueseCities[city]
+  (city) => !translatedToPortugueseCities[city],
 );
 
 console.warn(
   "Missing translations for the following cities:",
-  missingCityTranslations
+  missingCityTranslations,
 );
 
 const citiesWithTranslation = allAvailableCities.map((city) => {
