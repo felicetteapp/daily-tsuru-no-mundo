@@ -20,8 +20,10 @@ const generateLowResImage = (file, uuid) => {
     const imageFile = `${uuid}.webp`;
     image
       .rotate()
-      .resize(1080)
-      .webp()
+      .resize({ height: 720, withoutEnlargement: true })
+      .webp({
+        quality: 80,
+      })
       .toFile(path.join(__dirname, "../public/images", imageFile), (err) => {
         if (err) {
           console.log(err);
@@ -41,7 +43,7 @@ const processAllImages = async () => {
   for (let i = 0; i < allImagesOnPath.length; i++) {
     const file = allImagesOnPath[i];
     const randomUuid = uuid.v4();
-    const [date, rawLocation] = file.split('#')[0].split("_");
+    const [date, rawLocation] = file.split("#")[0].split("_");
     const [location] = rawLocation.split(".");
     const [year, month, day] = date.split("-");
     const generatedImage = await generateLowResImage(file, randomUuid);
@@ -75,7 +77,7 @@ const processAllImages = async () => {
       const newTsurusData = [];
       response.forEach(({ thumbnail, mainColor, width, height, fullSize }) => {
         const tsuruDataOfThisImage = tsuruData.find((tsuru) =>
-          fullSize.endsWith(tsuru.image)
+          fullSize.endsWith(tsuru.image),
         );
 
         const thisTsuruData = {
@@ -87,12 +89,12 @@ const processAllImages = async () => {
         };
         newTsurusData.push(thisTsuruData);
       });
-      
+
       fs.writeFileSync(
         tsuruDataFilePath,
-        JSON.stringify(newTsurusData, null, 2)
+        JSON.stringify(newTsurusData, null, 2),
       );
-    }
+    },
   );
 };
 
