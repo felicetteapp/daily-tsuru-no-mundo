@@ -34,17 +34,6 @@ const handleBtnClick = (event: MouseEvent) => {
 
   tsuruEl.classList.toggle("tsuru--overlay-open");
 
-  const tsuruGifEl = tsuruEl.querySelector<HTMLImageElement>(
-    ".tsuru__overlay > [t-overlay-gif-image]"
-  );
-
-  const foundTsuru = tsurusGifs.find((g) => g.uuid === gifUuid);
-  const thisTsuruGifPath = foundTsuru ? foundTsuru.path : undefined;
-
-  if (!tsuruGifEl || !thisTsuruGifPath) {
-    return;
-  }
-  tsuruGifEl.src = thisTsuruGifPath;
 };
 
 const onLoadGifsScript = () => {

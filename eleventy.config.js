@@ -4,18 +4,32 @@ import MarkdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import MarkdownItContainer from "markdown-it-container";
 import hljs from "highlight.js";
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import htmlmin from "html-minifier-terser";
 
 const readPackageJsonData = async () => {
   const packageJson = readFileSync("./package.json");
   return JSON.parse(packageJson);
 };
 
+const tsurusGifs = JSON.parse(
+  readFileSync("./src/_data/tsurusGifs.json", "utf8"),
+);
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
-  eleventyConfig.addPassthroughCopy({ "public/images": "images" });
+  //  eleventyConfig.addPassthroughCopy({ "public/images": "images" });
   eleventyConfig.addPassthroughCopy({ "public/js": "js" });
   eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
+
+  eleventyConfig.addLiquidFilter("gifUrl", (uuid) => {
+    const foundGif = tsurusGifs.find((gif) => gif.uuid === uuid);
+    if (!foundGif) {
+      console.log("foundGif", foundGif);
+    }
+    return foundGif ? `../public/${foundGif.path}` : "";
+  });
 
   const mdOptions = {
     html: true,
@@ -75,4 +89,47 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("sass/");
   eleventyConfig.addWatchTarget("public/js/script.js");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    transformOnRequest: false,
+    sharpOptions: {
+      animated: true,
+    },
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+      pictureAttributes: {},
+    },
+  });
+
+  eleventyConfig.addTransform("htmlmin", function (content) {
+    if ((this.page.outputPath || "").endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        minifyJs: true,
+        removeEmptyAttributes: (attributeName, tag) => {
+          const galleryAttrs = ["gc", "gl", "gloc", "gbc", "gf"];
+          const photoAttrs = ["dc", "dl", "dloc", "dbc", "df"];
+          const ilAttrs = ["il-", "t-"];
+
+          if (
+            galleryAttrs.includes(attributeName) ||
+            photoAttrs.includes(attributeName) ||
+            ilAttrs.some((prefix) => attributeName.startsWith(prefix))
+          ) {
+            return false;
+          }
+          return true;
+        },
+      });
+
+      return minified;
+    }
+
+    return content;
+  });
 }

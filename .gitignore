@@ -4,3 +4,4 @@ _site/
 .npmrc
 .DS_Store
 exported_data/
+.cache

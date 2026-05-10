@@ -1,0 +1,77 @@
+[
+  {
+    "label": "Felicette.app",
+    "image": "../public/images/neighbors/felicette.GIF",
+    "url": "https://felicette.app"
+  },
+  {
+    "label": "Inspire Mari",
+    "image": "../public/images/neighbors/inspiremari.nl.gif",
+    "url": "https://inspiremari.nl"
+  },
+  {
+    "label": "Prismatic Pink",
+    "image": "../public/images/neighbors/blog.prismatic.pink.gif",
+    "url": "https://blog.prismatic.pink"
+  },
+  {
+    "label": "Aegi",
+    "image": "../public/images/neighbors/aegi.neocities.org.gif",
+    "url": "https://aegi.neocities.org"
+  },
+  {
+    "label": "Cinni",
+    "image": "../public/images/neighbors/cinni.net.gif",
+    "url": "https://cinni.net"
+  },
+  {
+    "label": "CinnaMuff",
+    "image": "../public/images/neighbors/cinnamuff.space.png",
+    "url": "https://cinnamuff.space"
+  },
+  {
+    "label": "CloverBell",
+    "image": "../public/images/neighbors/cloverbell.neocities.org.gif",
+    "url": "https://cloverbell.neocities.org"
+  },
+  {
+    "label": "Lovesick Cafe",
+    "image": "../public/images/neighbors/lovesick.cafe.png",
+    "url": "https://lovesick.cafe"
+  },
+  {
+    "label": "Earedworm",
+    "image": "../public/images/neighbors/earedworm.neocities.org.gif",
+    "url": "https://earedworm.neocities.org"
+  },
+  {
+    "label": "Zucchini.cc",
+    "image": "../public/images/neighbors/zucchini.cc.gif",
+    "url": "https://zucchini.cc"
+  },
+  {
+    "label": "Malenkorin.net",
+    "image": "https://melankorin.net/assets/img/buttons/button-1.gif",
+    "url": "https://melankorin.net"
+  },
+  {
+    "label": "luvstarkei.com",
+    "image": "../public/images/neighbors/luvstarkei.com.webp",
+    "url": "https://luvstarkei.com"
+  },
+  {
+    "label": "irony-machine.neocities.org",
+    "image": "../public/images/neighbors/irony-machine.neocities.org.gif",
+    "url": "https://irony-machine.neocities.org"
+  },
+  {
+    "label": "ooops.lol",
+    "image": "../public/images/neighbors/ooops.lol.gif",
+    "url": "https://ooops.lol"
+  },
+  {
+    "label": "maddycha.com",
+    "image": "../public/images/neighbors/maddycha.com.gif",
+    "url": "https://maddycha.com"
+  }
+]

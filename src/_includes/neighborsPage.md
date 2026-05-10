@@ -2,7 +2,6 @@
 
 Cools sites that are worth checking out:
 
-{% include './_includes/neighborsGifs.md' %}
 
 ## Can I add my site to this list?
 

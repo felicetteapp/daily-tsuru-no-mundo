@@ -3,5 +3,91 @@ layout: pagesLayout.njk
 ---
 
 <div class="page" data-lenis-prevent>
-  {% renderFile "./src/_includes/neighborsPage.md" %}
+  <h1>Neighbors</h1>
+  <p>Cools sites that are worth checking out:</p>
+  <div class="neighbors__container">
+    {% for neighbor in neighborsGifs %}
+      <a
+        class="neighbor"
+        href="{{ neighbor.url }}"
+        target="_blank"
+        rel="noopener noreferrer">
+        <img
+          src="{{ neighbor.image }}"
+          alt="{{ neighbor.alt }}"
+          eleventy:formats="gif">
+      </a>
+    {% endfor %}
+  </div>
+  <h2>Can I add my site to this list?</h2>
+  <p>Sure! Just send me an email at
+    <a href="mailto:ola@tsurunomundo.com.br">ola@tsurunomundo.com.br</a>
+    with the subject "Neighbors" and I'll check it out</p>
+  <hr>
+  <h2>Can I add your site to my list?</h2>
+  <p>Of course! I'd be honored. Just let me know when you do so I can check it out!</p>
+
+  <h3>How can I do it?</h3>
+  <p>Just download the image and add it to your site with the link to
+    <a href="https://daily.tsurunomundo.com.br">https://dailytsurunomundo.com.br</a>
+    and you're good to go!</p>
+
+  <h4>Options</h4>
+
+  <h5>200x20</h5>
+  <div class="md-flex">
+    <a
+      href="https://daily.tsurunomundo.com.br"
+      target="_blank"
+      rel="noopener">
+      <img
+        src="../public/images/neighbors/tsurunomundo_daily.gif"
+        alt="Tsuru no Mundo daily"
+        eleventy:formats="gif">
+    </a>
+  </div>
+
+<pre><code class="language-html">&lt;a href="https://daily.tsurunomundo.com.br" target="_blank" rel="noopener"&gt;
+  &lt;img src="https://daily.tsurunomundo.com.br/images/neighbors/tsurunomundo_daily.gif" alt="Tsuru no Mundo daily"&gt;
+&lt;/a&gt;</code></pre>
+
+<pre><code class="language-markdown">[![Tsuru no Mundo daily](https://daily.tsurunomundo.com.br/images/neighbors/tsurunomundo_daily.gif)](https://daily.tsurunomundo.com.br)</code></pre>
+
+  <h5>88x31</h5>
+  <div class="md-flex">
+    <a
+      href="https://daily.tsurunomundo.com.br"
+      target="_blank"
+      rel="noopener">
+      <img
+        src="../public/images/neighbors/daily.tsurunomundo.com.br.88x31.GIF"
+        alt="Tsuru no Mundo daily"
+        eleventy:formats="gif">
+    </a>
+  </div>
+
+<pre>
+  <code>
+&lt;a href="https://daily.tsurunomundo.com.br" target="_blank" rel="noopener"&gt;
+  &lt;img src="https://daily.tsurunomundo.com.br/images/neighbors/daily.tsurunomundo.com.br.88x31.GIF" alt="Tsuru no Mundo daily"&gt;
+&lt;/a&gt;
+  </code>
+</pre>
+
+<pre>
+  <code>
+[![Tsuru no Mundo daily](https://daily.tsurunomundo.com.br/images/neighbors/daily.tsurunomundo.com.br.88x31.GIF)](https://daily.tsurunomundo.com.br)
+  </code>
+</pre>
+
+  <h2>More?</h2>
+  <p>Each tsuru has its own gif if you want to use it on your site. You can find them clicking the arrow button inside each photo</p>
+  <img
+    src="../public/images/neighbors/tsuru_gif.gif"
+    alt="Tsuru no Mundo daily"
+    width="100%"
+    height="auto"
+    eleventy:formats="gif"
+    style="max-width: 100%;height: auto;">
+
 </div>

@@ -1,4 +1,41 @@
 <section class="neighbors">
-  {% renderFile "./src/_includes/neighbors.md"
-    , safe %}
+  <h2>Neighbors</h2>
+  <h3>Cools sites that are worth checking out:</h3>
+  <div class="neighbors__container">
+    {% for neighbor in neighborsGifs %}
+      <a
+        class="neighbor"
+        href="{{ neighbor.url }}"
+        target="_blank"
+        rel="noopener noreferrer">
+        <img
+          src="{{ neighbor.image }}"
+          alt="{{ neighbor.alt }}"
+          eleventy:formats="gif">
+      </a>
+    {% endfor %}
+  </div>
+  <h3>Want to know more about the neighbors?</h3>
+  <div class="neighbors__container">
+    <a
+      class="neighbor"
+      href="https://daily.tsurunomundo.com.br"
+      target="_blank"
+      rel="noopener noreferrer">
+      <img
+        src="../public/images/neighbors/tsurunomundo_daily.gif"
+        alt="Tsuru no Mundo daily"
+        eleventy:formats="gif">
+    </a>
+    <a
+      class="neighbor"
+      href="https://daily.tsurunomundo.com.br"
+      target="_blank"
+      rel="noopener noreferrer">
+      <img
+        src="../public/images/neighbors/daily.tsurunomundo.com.br.88x31.GIF"
+        alt="Tsuru no Mundo daily"
+        eleventy:formats="gif">
+    </a>
+  </div>
 </section>

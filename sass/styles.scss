@@ -58,7 +58,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Hothic A1", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   color: #fff;
@@ -199,7 +199,9 @@ body {
     display: block;
     background: rgba(0, 0, 0, 0.3);
     padding: 1rem;
-    font-family: Roboto Mono, serif;
+    font-family:
+      Roboto Mono,
+      serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 12px;
@@ -239,6 +241,21 @@ body {
     cursor: pointer;
   }
 
+  &__image__container {
+    flex: 1;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+      position: relative;
+      flex: 1;
+    }
+  }
+
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -274,11 +291,11 @@ body {
 
       @at-root #{$prefix}--overlay-open {
         #{$prefix}__overlay {
-          @debug &;
           cursor: initial;
-          padding: 1rem 1rem;
+          padding: 1rem 0;
           opacity: 1;
-          height: 100%;
+          height: initial;
+          max-height: 100%;
           pointer-events: all;
         }
 
@@ -330,9 +347,9 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
     opacity: 0;
-    height: 0;
-    padding: 0rem 1rem;
-    transition: height 0.5s, opacity 0.5s, padding;
+    max-height: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
     overflow-y: auto;
     white-space: normal;
 
@@ -354,6 +371,10 @@ body {
     &__image {
       display: inline-block !important;
       margin-right: 1rem;
+
+      width: auto;
+      max-width: 90%;
+      height: var(--row-height);
 
       &:last-child {
         margin-right: 0;
@@ -461,11 +482,13 @@ body {
 
     &--colors {
       width: 100%;
+      align-items: center;
+      justify-content: flex-start;
 
       & {
         #{$root} {
-          width: 3rem;
           height: 3rem;
+          width: 3rem;
           border-radius: 50%;
         }
       }
@@ -506,68 +529,6 @@ body {
     height: 100%;
     //    height: min(100%, 80svh);
     padding-right: 0.5rem;
-  }
-}
-
-// felicette img-loading styles
-
-// prefix = il
-.il {
-  $prefix: &;
-  &-item {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    //    aspect-ratio: 3/4;
-    aspect-ratio: var(--il-aspect-ratio);
-    background: var(--il-main-color);
-    width: 100%;
-    height: 100%;
-
-    #{$prefix}-img,
-    #{$prefix}-thumbnail {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: 100%;
-      height: 100%;
-      display: block;
-      opacity: 0;
-      max-height: 100%;
-      object-fit: cover;
-      margin: auto;
-    }
-
-    #{$prefix}-thumbnail {
-      transition: opacity 1s, transform 1s, filter 1s;
-      filter: blur(20px);
-      transform: scale(1.2);
-    }
-
-    &--thumbnail-loaded {
-      #{$prefix}-thumbnail {
-        opacity: 1;
-        filter: blur(10px);
-        transform: scale(1.1);
-      }
-    }
-
-    &--img-loaded {
-      #{$prefix}-img {
-        opacity: 1;
-      }
-
-      #{$prefix}-thumbnail {
-        opacity: 0;
-        transform: scale(1);
-        filter: blur(0);
-        pointer-events: none;
-      }
-    }
   }
 }
 
@@ -656,4 +617,12 @@ body.modal--open {
       transition: opacity 1s ease-in both;
     }
   }
+}
+
+.neighbors__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }

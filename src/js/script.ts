@@ -29,7 +29,7 @@ const handleCloseTsuruModal = () => {
   }
 
   const imgAspectRatio = tsuruImageEl.getAttribute("il-aspect-ratio");
-  const imgSrc = tsuruImageEl.getAttribute("il-fullsize");
+  const imgSrc = tsuruImageEl.getAttribute("src");
   const modalImgEl: HTMLDivElement | null =
     document.querySelector(".modal__image");
 
@@ -39,7 +39,7 @@ const handleCloseTsuruModal = () => {
 
   document.documentElement.style.setProperty(
     "--modal-img-src",
-    `url(/${imgSrc})`
+    `url(${imgSrc})`
   );
 
   const positionOfTheTsuru = tsuruImageEl.getBoundingClientRect();
@@ -177,7 +177,7 @@ const handleTsuruOnClick = (event: MouseEvent) => {
     return;
   }
 
-  const imgSrc = tsuruImageEl.getAttribute("il-fullsize");
+  const imgSrc = tsuruImageEl.getAttribute("src");
   const imgAspectRatio = tsuruImageEl.getAttribute("il-aspect-ratio");
 
   if (!imgSrc || !imgAspectRatio) {
@@ -189,7 +189,7 @@ const handleTsuruOnClick = (event: MouseEvent) => {
 
   document.documentElement.style.setProperty(
     "--modal-img-src",
-    `url(/${imgSrc})`
+    `url(${imgSrc})`
   );
   document.documentElement.style.setProperty(
     "--modal-img-aspect-ratio",

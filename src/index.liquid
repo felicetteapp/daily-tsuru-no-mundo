@@ -14,25 +14,19 @@ layout: baselayout.njk
     t-date-day="{{post.date.day}}"
     t-main-color="{{ post.mainColor }}">
     <div class="tsuru">
-      <div
-        img-loading
-        il-uuid="{{post.uuid}}"
-        il-thumbnail="{{post.thumbnail}}"
-        il-fullsize="images/{{post.image}}"
-        il-width="{{post.width}}"
-        il-height="{{post.height}}"
-        il-aspect-ratio="{{post.width}}/{{post.height}}"
-        il-main-color="{{post.mainColor}}"
-        style="
-            max-width: 100%;
-            max-height: 100%;
-            width: {{post.width}}px;
-            height: auto;
-            background-color: {{post.mainColor}};
-            aspect-ratio: {{post.width}}/{{post.height}};
-            overflow: hidden;
-          ">
-</div>
+      <div class="tsuru__image__container">
+        <img
+          eleventy:widths="720"
+          src="../public/images/{{post.image}}"
+          alt="{{post.location}}"
+          il-uuid="{{post.uuid}}"
+          il-thumbnail="{{post.thumbnail}}"
+          il-fullsize="images/{{post.image}}"
+          il-width="{{post.width}}"
+          il-height="{{post.height}}"
+          il-aspect-ratio="{{post.width}}/{{post.height}}"
+          il-main-color="{{post.mainColor}}" />
+      </div>
       <main class="tsuru__caption">
         <h3 class="tsuru__caption__date">{{ post.date.year }}/{{ post.date.month }}/{{ post.date.day }}</h3>
         <h4 class="tsuru__caption__location">{{ post.location }}</h4>
@@ -48,8 +42,11 @@ layout: baselayout.njk
         <img
           t-overlay-gif-image
           width="88"
-          height="31" />
-        <p>You can download and share this GIF anywhere you want. If you add it to your site let me know, I would love  
+          height="31"
+          src={{ post.uuid | gifUrl }}
+          alt="GIF of {{ post.location }}"
+          eleventy:formats="gif" />
+        <p>You can download and share this GIF anywhere you want. If you add it to your site let me know, I would love           
           to see it! 😊</p>
       </div>
     </div>
