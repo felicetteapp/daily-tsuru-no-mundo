@@ -5,3 +5,4 @@ _site/
 .DS_Store
 exported_data/
 .cache
+public/images/thumbnail/

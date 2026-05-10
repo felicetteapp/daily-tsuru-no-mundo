@@ -44,7 +44,13 @@ const generateGif = async (input) => {
   const stream = encoder.createReadStream();
   encoder.setRepeat(0).setDelay(150).setQuality(5).start();
 
-  const thumbnailPath = path.join(__dirname, "..", "public", input.thumbnail);
+  const thumbnailPath = path.join(
+    __dirname,
+    "..",
+    "public",
+    "images",
+    input.image,
+  );
   const { image, metadata } = await getImageWithMetadata(thumbnailPath);
   const extraFrames = 3;
   const frameHeight = targetSize.height / extraFrames;
@@ -58,7 +64,7 @@ const generateGif = async (input) => {
   };
 
   const verticalSlicesCount = Math.ceil(
-    imgSizeResizedToFitWidth.height / frameHeight
+    imgSizeResizedToFitWidth.height / frameHeight,
   );
 
   for (let i = 0; i < verticalSlicesCount + 1 * extraFrames; i++) {
@@ -80,7 +86,7 @@ const generateGif = async (input) => {
       -leftOffset,
       y,
       imgSizeResizedToFitWidth.width,
-      imgSizeResizedToFitWidth.height
+      imgSizeResizedToFitWidth.height,
     );
     encoder.addFrame(canvas);
   }
@@ -95,7 +101,7 @@ const generateGif = async (input) => {
         "public",
         "images",
         "gifs",
-        input.uuid + ".gif"
+        input.uuid + ".gif",
       );
       fs.writeFileSync(outputPath, result);
 
@@ -136,7 +142,7 @@ const generateGifsFromTsurus = async () => {
 
   fs.writeFileSync(
     pathToGifsJson,
-    JSON.stringify([...currentGifsJsonData, ...generated], null, 2)
+    JSON.stringify([...currentGifsJsonData, ...generated], null, 2),
   );
 };
 
