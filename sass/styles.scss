@@ -172,23 +172,25 @@ body {
 }
 
 body {
-  &:has(.tsuru__container:hover) {
-    .tsuru__container {
-      $tcontainer-prefix: &;
-      &:hover {
-        opacity: 1;
+  @media (hover: hover) {
+    &:has(.tsuru__container:hover) {
+      .tsuru__container {
+        $tcontainer-prefix: &;
+        &:hover {
+          opacity: 1;
+        }
+
+        @at-root #{$tcontainer-prefix}:not(:hover) {
+          opacity: 0.5;
+          transition: opacity 0.25s ease-in;
+        }
       }
 
-      @at-root #{$tcontainer-prefix}:not(:hover) {
+      .body__info,
+      .filter__group__container {
         opacity: 0.5;
         transition: opacity 0.25s ease-in;
       }
-    }
-
-    .body__info,
-    .filter__group__container {
-      opacity: 0.5;
-      transition: opacity 0.25s ease-in;
     }
   }
 }

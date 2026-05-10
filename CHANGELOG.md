@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-05-10
+### Changed
+- Smallfix: now the hover effect on the tsurus only applies to devices that support hover, improving the experience on mobile devices.
+
 ## [2.0.0] - 2026-05-09
 ### Changed
 - Just changed the entire image optimization, now using `@11ty/eleventy-img`
