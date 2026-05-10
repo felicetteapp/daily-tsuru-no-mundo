@@ -3808,7 +3808,1325 @@
         "height": 810
       }
     ],
+    "03": [
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "16"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "0d27d088-7bd9-40a3-ad85-889bcd391cb9",
+        "image": "0d27d088-7bd9-40a3-ad85-889bcd391cb9.webp",
+        "thumbnail": "images/thumbnail/il-0d27d088-7bd9-40a3-ad85-889bcd391cb9.webp",
+        "mainColor": "rgb(50,42,37)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "15"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "2ec39489-161e-459f-8947-86e322bb7d67",
+        "image": "2ec39489-161e-459f-8947-86e322bb7d67.webp",
+        "thumbnail": "images/thumbnail/il-2ec39489-161e-459f-8947-86e322bb7d67.webp",
+        "mainColor": "rgb(166,135,67)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "14"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "4e599619-0b98-440a-ad92-19c9331bbeaa",
+        "image": "4e599619-0b98-440a-ad92-19c9331bbeaa.webp",
+        "thumbnail": "images/thumbnail/il-4e599619-0b98-440a-ad92-19c9331bbeaa.webp",
+        "mainColor": "rgb(128,124,119)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "13"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "eefeecb4-f2a4-4a48-8e4e-2502de1c543f",
+        "image": "eefeecb4-f2a4-4a48-8e4e-2502de1c543f.webp",
+        "thumbnail": "images/thumbnail/il-eefeecb4-f2a4-4a48-8e4e-2502de1c543f.webp",
+        "mainColor": "rgb(167,146,130)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "12"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "dc64f106-3e75-4820-8025-1e6cd24c8f36",
+        "image": "dc64f106-3e75-4820-8025-1e6cd24c8f36.webp",
+        "thumbnail": "images/thumbnail/il-dc64f106-3e75-4820-8025-1e6cd24c8f36.webp",
+        "mainColor": "rgb(13,11,9)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "11"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "d6e26aaf-2214-428d-af21-ab9bbb3f733c",
+        "image": "d6e26aaf-2214-428d-af21-ab9bbb3f733c.webp",
+        "thumbnail": "images/thumbnail/il-d6e26aaf-2214-428d-af21-ab9bbb3f733c.webp",
+        "mainColor": "rgb(169,144,120)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "10"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "8ce8f318-95a5-4fac-981c-83b08d8725e4",
+        "image": "8ce8f318-95a5-4fac-981c-83b08d8725e4.webp",
+        "thumbnail": "images/thumbnail/il-8ce8f318-95a5-4fac-981c-83b08d8725e4.webp",
+        "mainColor": "rgb(65,56,47)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "09"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "5bf4244e-7351-4735-bbdd-0559268161f4",
+        "image": "5bf4244e-7351-4735-bbdd-0559268161f4.webp",
+        "thumbnail": "images/thumbnail/il-5bf4244e-7351-4735-bbdd-0559268161f4.webp",
+        "mainColor": "rgb(54,49,44)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "08"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "0a014e57-0956-4104-bbb4-a471773a4cde",
+        "image": "0a014e57-0956-4104-bbb4-a471773a4cde.webp",
+        "thumbnail": "images/thumbnail/il-0a014e57-0956-4104-bbb4-a471773a4cde.webp",
+        "mainColor": "rgb(132,106,84)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "08"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "f78184b8-ba0d-4ac3-8718-c5b24f4319b4",
+        "image": "f78184b8-ba0d-4ac3-8718-c5b24f4319b4.webp",
+        "thumbnail": "images/thumbnail/il-f78184b8-ba0d-4ac3-8718-c5b24f4319b4.webp",
+        "mainColor": "rgb(102,94,46)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "07"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "1719c9b6-4f16-41ab-a8ca-a465936a3db9",
+        "image": "1719c9b6-4f16-41ab-a8ca-a465936a3db9.webp",
+        "thumbnail": "images/thumbnail/il-1719c9b6-4f16-41ab-a8ca-a465936a3db9.webp",
+        "mainColor": "rgb(34,30,30)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "06"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "1c27db7a-f198-44d9-b05e-1ed026780330",
+        "image": "1c27db7a-f198-44d9-b05e-1ed026780330.webp",
+        "thumbnail": "images/thumbnail/il-1c27db7a-f198-44d9-b05e-1ed026780330.webp",
+        "mainColor": "rgb(142,129,103)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "05"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "94f6e9f2-a35b-4b9a-9c1e-594b84a46c46",
+        "image": "94f6e9f2-a35b-4b9a-9c1e-594b84a46c46.webp",
+        "thumbnail": "images/thumbnail/il-94f6e9f2-a35b-4b9a-9c1e-594b84a46c46.webp",
+        "mainColor": "rgb(117,118,106)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "04"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "2b2d812d-a607-4ad9-822e-87144394492a",
+        "image": "2b2d812d-a607-4ad9-822e-87144394492a.webp",
+        "thumbnail": "images/thumbnail/il-2b2d812d-a607-4ad9-822e-87144394492a.webp",
+        "mainColor": "rgb(76,63,56)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "03"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "580562e3-efe9-4db8-b199-a70866e4e199",
+        "image": "580562e3-efe9-4db8-b199-a70866e4e199.webp",
+        "thumbnail": "images/thumbnail/il-580562e3-efe9-4db8-b199-a70866e4e199.webp",
+        "mainColor": "rgb(116,114,105)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "02"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "a7c7fd57-b60b-40ae-bf3b-1ad6628318db",
+        "image": "a7c7fd57-b60b-40ae-bf3b-1ad6628318db.webp",
+        "thumbnail": "images/thumbnail/il-a7c7fd57-b60b-40ae-bf3b-1ad6628318db.webp",
+        "mainColor": "rgb(36,30,28)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "03",
+          "day": "01"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "cf9b1324-6cb9-4d1b-b638-5662af2f4999",
+        "image": "cf9b1324-6cb9-4d1b-b638-5662af2f4999.webp",
+        "thumbnail": "images/thumbnail/il-cf9b1324-6cb9-4d1b-b638-5662af2f4999.webp",
+        "mainColor": "rgb(154,130,109)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "31"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "41e908ce-535f-4719-8e3e-2955d97e9c8c",
+        "image": "41e908ce-535f-4719-8e3e-2955d97e9c8c.webp",
+        "thumbnail": "images/thumbnail/il-41e908ce-535f-4719-8e3e-2955d97e9c8c.webp",
+        "mainColor": "rgb(136,134,8)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "30"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "0fa11c25-8547-4bd7-86f9-15d6cb32955b",
+        "image": "0fa11c25-8547-4bd7-86f9-15d6cb32955b.webp",
+        "thumbnail": "images/thumbnail/il-0fa11c25-8547-4bd7-86f9-15d6cb32955b.webp",
+        "mainColor": "rgb(192,190,187)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "30"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "04239aed-1da9-4623-bba3-a000adf40a8e",
+        "image": "04239aed-1da9-4623-bba3-a000adf40a8e.webp",
+        "thumbnail": "images/thumbnail/il-04239aed-1da9-4623-bba3-a000adf40a8e.webp",
+        "mainColor": "rgb(111,108,105)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "29"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "13e86146-7326-48b8-a119-5e6d3f1228f8",
+        "image": "13e86146-7326-48b8-a119-5e6d3f1228f8.webp",
+        "thumbnail": "images/thumbnail/il-13e86146-7326-48b8-a119-5e6d3f1228f8.webp",
+        "mainColor": "rgb(113,86,64)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "29"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "324ea052-308d-4da0-b4eb-e4098572d526",
+        "image": "324ea052-308d-4da0-b4eb-e4098572d526.webp",
+        "thumbnail": "images/thumbnail/il-324ea052-308d-4da0-b4eb-e4098572d526.webp",
+        "mainColor": "rgb(120,105,96)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "29"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "bb66c057-19fb-4415-8e59-5f39f554ae7c",
+        "image": "bb66c057-19fb-4415-8e59-5f39f554ae7c.webp",
+        "thumbnail": "images/thumbnail/il-bb66c057-19fb-4415-8e59-5f39f554ae7c.webp",
+        "mainColor": "rgb(103,93,74)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "28"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "009a2eaa-3a46-4d92-bd0c-97ca790fe0ec",
+        "image": "009a2eaa-3a46-4d92-bd0c-97ca790fe0ec.webp",
+        "thumbnail": "images/thumbnail/il-009a2eaa-3a46-4d92-bd0c-97ca790fe0ec.webp",
+        "mainColor": "rgb(68,62,72)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "27"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "a7abfd4f-e74f-438b-99e5-90d1f1b8506f",
+        "image": "a7abfd4f-e74f-438b-99e5-90d1f1b8506f.webp",
+        "thumbnail": "images/thumbnail/il-a7abfd4f-e74f-438b-99e5-90d1f1b8506f.webp",
+        "mainColor": "rgb(70,52,42)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "27"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "6793b819-36a2-457c-b567-cc7f5e53bb7f",
+        "image": "6793b819-36a2-457c-b567-cc7f5e53bb7f.webp",
+        "thumbnail": "images/thumbnail/il-6793b819-36a2-457c-b567-cc7f5e53bb7f.webp",
+        "mainColor": "rgb(64,66,64)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "26"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "a0bca8d4-c6f5-4cdb-ba08-7e0213ecabf6",
+        "image": "a0bca8d4-c6f5-4cdb-ba08-7e0213ecabf6.webp",
+        "thumbnail": "images/thumbnail/il-a0bca8d4-c6f5-4cdb-ba08-7e0213ecabf6.webp",
+        "mainColor": "rgb(196,203,204)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "25"
+        },
+        "location": "São José dos Pinhais, PR - Brasil",
+        "uuid": "1754422e-fc0f-4f7e-84f0-0b31c32114b9",
+        "image": "1754422e-fc0f-4f7e-84f0-0b31c32114b9.webp",
+        "thumbnail": "images/thumbnail/il-1754422e-fc0f-4f7e-84f0-0b31c32114b9.webp",
+        "mainColor": "rgb(105,90,77)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "24"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "23645d20-0539-41b6-8d67-a3eec77c7ad3",
+        "image": "23645d20-0539-41b6-8d67-a3eec77c7ad3.webp",
+        "thumbnail": "images/thumbnail/il-23645d20-0539-41b6-8d67-a3eec77c7ad3.webp",
+        "mainColor": "rgb(128,67,44)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "23"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "c28b10f6-4baf-4750-8b88-44b8148ce850",
+        "image": "c28b10f6-4baf-4750-8b88-44b8148ce850.webp",
+        "thumbnail": "images/thumbnail/il-c28b10f6-4baf-4750-8b88-44b8148ce850.webp",
+        "mainColor": "rgb(172,157,143)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "22"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "feb52bac-909b-406a-bf49-95ee856a9dbf",
+        "image": "feb52bac-909b-406a-bf49-95ee856a9dbf.webp",
+        "thumbnail": "images/thumbnail/il-feb52bac-909b-406a-bf49-95ee856a9dbf.webp",
+        "mainColor": "rgb(110,92,81)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "21"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "48926963-925f-4460-b05e-2bb94e89fb60",
+        "image": "48926963-925f-4460-b05e-2bb94e89fb60.webp",
+        "thumbnail": "images/thumbnail/il-48926963-925f-4460-b05e-2bb94e89fb60.webp",
+        "mainColor": "rgb(122,110,99)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "20"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "1008434b-a652-4e44-b43b-599f608b6856",
+        "image": "1008434b-a652-4e44-b43b-599f608b6856.webp",
+        "thumbnail": "images/thumbnail/il-1008434b-a652-4e44-b43b-599f608b6856.webp",
+        "mainColor": "rgb(80,70,65)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "19"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "2b990e4c-b777-4ed5-949e-7491a3fe637e",
+        "image": "2b990e4c-b777-4ed5-949e-7491a3fe637e.webp",
+        "thumbnail": "images/thumbnail/il-2b990e4c-b777-4ed5-949e-7491a3fe637e.webp",
+        "mainColor": "rgb(88,89,73)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "18"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "9fb44500-fade-4557-b342-7c3f24fc8434",
+        "image": "9fb44500-fade-4557-b342-7c3f24fc8434.webp",
+        "thumbnail": "images/thumbnail/il-9fb44500-fade-4557-b342-7c3f24fc8434.webp",
+        "mainColor": "rgb(19,21,24)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "17"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "c2fc6583-ef60-4044-9f2b-de6e5290a920",
+        "image": "c2fc6583-ef60-4044-9f2b-de6e5290a920.webp",
+        "thumbnail": "images/thumbnail/il-c2fc6583-ef60-4044-9f2b-de6e5290a920.webp",
+        "mainColor": "rgb(54,168,194)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "16"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "60737b39-7a47-40d4-8291-9b38ce818851",
+        "image": "60737b39-7a47-40d4-8291-9b38ce818851.webp",
+        "thumbnail": "images/thumbnail/il-60737b39-7a47-40d4-8291-9b38ce818851.webp",
+        "mainColor": "rgb(160,149,138)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "15"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "3f15decb-734e-4279-a7cc-7a8e37caf2c6",
+        "image": "3f15decb-734e-4279-a7cc-7a8e37caf2c6.webp",
+        "thumbnail": "images/thumbnail/il-3f15decb-734e-4279-a7cc-7a8e37caf2c6.webp",
+        "mainColor": "rgb(51,46,52)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "14"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "0a813333-5bba-43a7-8d6f-8a6d92b45bbf",
+        "image": "0a813333-5bba-43a7-8d6f-8a6d92b45bbf.webp",
+        "thumbnail": "images/thumbnail/il-0a813333-5bba-43a7-8d6f-8a6d92b45bbf.webp",
+        "mainColor": "rgb(120,109,98)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "13"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "897e6bf8-39ac-4502-9c16-360de234133b",
+        "image": "897e6bf8-39ac-4502-9c16-360de234133b.webp",
+        "thumbnail": "images/thumbnail/il-897e6bf8-39ac-4502-9c16-360de234133b.webp",
+        "mainColor": "rgb(142,141,133)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "12"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "a606f511-2bb3-4597-83ac-b7a7b4c37fac",
+        "image": "a606f511-2bb3-4597-83ac-b7a7b4c37fac.webp",
+        "thumbnail": "images/thumbnail/il-a606f511-2bb3-4597-83ac-b7a7b4c37fac.webp",
+        "mainColor": "rgb(146,137,127)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "11"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "ae7e61b1-5c58-4c66-8829-fe6fb8cceb72",
+        "image": "ae7e61b1-5c58-4c66-8829-fe6fb8cceb72.webp",
+        "thumbnail": "images/thumbnail/il-ae7e61b1-5c58-4c66-8829-fe6fb8cceb72.webp",
+        "mainColor": "rgb(123,111,102)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "10"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "50daa37c-c5de-467c-b250-20b8b4cc1326",
+        "image": "50daa37c-c5de-467c-b250-20b8b4cc1326.webp",
+        "thumbnail": "images/thumbnail/il-50daa37c-c5de-467c-b250-20b8b4cc1326.webp",
+        "mainColor": "rgb(110,99,88)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "09"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "56527d7f-6693-45cc-a8ae-d181c0251a6a",
+        "image": "56527d7f-6693-45cc-a8ae-d181c0251a6a.webp",
+        "thumbnail": "images/thumbnail/il-56527d7f-6693-45cc-a8ae-d181c0251a6a.webp",
+        "mainColor": "rgb(167,153,139)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "08"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "8721636c-019e-4285-affb-10ee226c8c1b",
+        "image": "8721636c-019e-4285-affb-10ee226c8c1b.webp",
+        "thumbnail": "images/thumbnail/il-8721636c-019e-4285-affb-10ee226c8c1b.webp",
+        "mainColor": "rgb(114,94,78)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "08"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "472c64c8-2815-4bad-afdb-e2d70274a090",
+        "image": "472c64c8-2815-4bad-afdb-e2d70274a090.webp",
+        "thumbnail": "images/thumbnail/il-472c64c8-2815-4bad-afdb-e2d70274a090.webp",
+        "mainColor": "rgb(40,31,19)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "07"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "88b4abf7-432d-4528-8040-1446682e4ca4",
+        "image": "88b4abf7-432d-4528-8040-1446682e4ca4.webp",
+        "thumbnail": "images/thumbnail/il-88b4abf7-432d-4528-8040-1446682e4ca4.webp",
+        "mainColor": "rgb(65,62,61)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "06"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "10f82f81-8f9f-4b87-b147-cfcc482ab78e",
+        "image": "10f82f81-8f9f-4b87-b147-cfcc482ab78e.webp",
+        "thumbnail": "images/thumbnail/il-10f82f81-8f9f-4b87-b147-cfcc482ab78e.webp",
+        "mainColor": "rgb(42,39,38)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "05"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "4945b3a9-7b1f-4b2a-b0fe-4016345aa91b",
+        "image": "4945b3a9-7b1f-4b2a-b0fe-4016345aa91b.webp",
+        "thumbnail": "images/thumbnail/il-4945b3a9-7b1f-4b2a-b0fe-4016345aa91b.webp",
+        "mainColor": "rgb(142,141,141)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "04"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "2381e09e-9560-4940-8e01-b62998a5d9ef",
+        "image": "2381e09e-9560-4940-8e01-b62998a5d9ef.webp",
+        "thumbnail": "images/thumbnail/il-2381e09e-9560-4940-8e01-b62998a5d9ef.webp",
+        "mainColor": "rgb(61,56,52)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "03"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "ae0d9ad2-a46a-4455-a085-13c9c599c254",
+        "image": "ae0d9ad2-a46a-4455-a085-13c9c599c254.webp",
+        "thumbnail": "images/thumbnail/il-ae0d9ad2-a46a-4455-a085-13c9c599c254.webp",
+        "mainColor": "rgb(173,132,93)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "02"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "08eca38d-1b3d-4ce1-bedc-ff11614ed5d3",
+        "image": "08eca38d-1b3d-4ce1-bedc-ff11614ed5d3.webp",
+        "thumbnail": "images/thumbnail/il-08eca38d-1b3d-4ce1-bedc-ff11614ed5d3.webp",
+        "mainColor": "rgb(56,57,60)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2025",
+          "month": "03",
+          "day": "01"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "7d6f6075-6d1b-4e98-b645-00876dc27243",
+        "image": "7d6f6075-6d1b-4e98-b645-00876dc27243.webp",
+        "thumbnail": "images/thumbnail/il-7d6f6075-6d1b-4e98-b645-00876dc27243.webp",
+        "mainColor": "rgb(148,136,124)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2023",
+          "month": "03",
+          "day": "11"
+        },
+        "location": "São Paulo, SP - Brasil",
+        "uuid": "641a2bc4-8e15-46f6-9792-1606b68cf67b",
+        "image": "641a2bc4-8e15-46f6-9792-1606b68cf67b.webp",
+        "thumbnail": "images/thumbnail/il-641a2bc4-8e15-46f6-9792-1606b68cf67b.webp",
+        "mainColor": "rgb(76,69,62)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "29"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "6f89ab42-077a-4773-a3a9-ccfd2acc22fd",
+        "image": "6f89ab42-077a-4773-a3a9-ccfd2acc22fd.webp",
+        "thumbnail": "images/thumbnail/il-6f89ab42-077a-4773-a3a9-ccfd2acc22fd.webp",
+        "mainColor": "rgb(73,65,59)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "28"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "90760c85-42a3-4c36-a424-dd5d926634ed",
+        "image": "90760c85-42a3-4c36-a424-dd5d926634ed.webp",
+        "thumbnail": "images/thumbnail/il-90760c85-42a3-4c36-a424-dd5d926634ed.webp",
+        "mainColor": "rgb(135,119,58)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "27"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "082369e6-c58a-4e92-9a5e-f493be82336b",
+        "image": "082369e6-c58a-4e92-9a5e-f493be82336b.webp",
+        "thumbnail": "images/thumbnail/il-082369e6-c58a-4e92-9a5e-f493be82336b.webp",
+        "mainColor": "rgb(71,13,9)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "27"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "8a5ee16a-1e2e-435d-a2eb-4c9ce628f9f6",
+        "image": "8a5ee16a-1e2e-435d-a2eb-4c9ce628f9f6.webp",
+        "thumbnail": "images/thumbnail/il-8a5ee16a-1e2e-435d-a2eb-4c9ce628f9f6.webp",
+        "mainColor": "rgb(183,179,171)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "25"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "517df0ca-386a-44eb-b2d5-50786e2f07b2",
+        "image": "517df0ca-386a-44eb-b2d5-50786e2f07b2.webp",
+        "thumbnail": "images/thumbnail/il-517df0ca-386a-44eb-b2d5-50786e2f07b2.webp",
+        "mainColor": "rgb(138,90,55)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "24"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "bf3a53dc-d14a-4bfc-ac35-907ab0fc0bab",
+        "image": "bf3a53dc-d14a-4bfc-ac35-907ab0fc0bab.webp",
+        "thumbnail": "images/thumbnail/il-bf3a53dc-d14a-4bfc-ac35-907ab0fc0bab.webp",
+        "mainColor": "rgb(193,186,179)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "23"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "14ddb025-2361-484f-a9ae-bd6ed7f44555",
+        "image": "14ddb025-2361-484f-a9ae-bd6ed7f44555.webp",
+        "thumbnail": "images/thumbnail/il-14ddb025-2361-484f-a9ae-bd6ed7f44555.webp",
+        "mainColor": "rgb(71,57,43)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "22"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "3c881a6a-7731-4356-a3a6-7878940af572",
+        "image": "3c881a6a-7731-4356-a3a6-7878940af572.webp",
+        "thumbnail": "images/thumbnail/il-3c881a6a-7731-4356-a3a6-7878940af572.webp",
+        "mainColor": "rgb(138,135,127)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "20"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "daf542e4-9dac-4c83-a3cf-ea9a1dde2d43",
+        "image": "daf542e4-9dac-4c83-a3cf-ea9a1dde2d43.webp",
+        "thumbnail": "images/thumbnail/il-daf542e4-9dac-4c83-a3cf-ea9a1dde2d43.webp",
+        "mainColor": "rgb(133,128,123)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "19"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "ac60c409-50c5-4b18-b101-83d8ad5f70c7",
+        "image": "ac60c409-50c5-4b18-b101-83d8ad5f70c7.webp",
+        "thumbnail": "images/thumbnail/il-ac60c409-50c5-4b18-b101-83d8ad5f70c7.webp",
+        "mainColor": "rgb(179,176,171)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "18"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "99cd48c2-c4fa-476a-ae16-e0e359c7c028",
+        "image": "99cd48c2-c4fa-476a-ae16-e0e359c7c028.webp",
+        "thumbnail": "images/thumbnail/il-99cd48c2-c4fa-476a-ae16-e0e359c7c028.webp",
+        "mainColor": "rgb(194,192,185)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "17"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "47f0cec1-b25e-42f2-bb82-2ef85388bca2",
+        "image": "47f0cec1-b25e-42f2-bb82-2ef85388bca2.webp",
+        "thumbnail": "images/thumbnail/il-47f0cec1-b25e-42f2-bb82-2ef85388bca2.webp",
+        "mainColor": "rgb(84,75,69)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "17"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "46a3e213-3f1b-4e85-94d2-a22b526ae68c",
+        "image": "46a3e213-3f1b-4e85-94d2-a22b526ae68c.webp",
+        "thumbnail": "images/thumbnail/il-46a3e213-3f1b-4e85-94d2-a22b526ae68c.webp",
+        "mainColor": "rgb(117,114,111)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "16"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "9283db0d-0787-40c4-9889-97fa1210c418",
+        "image": "9283db0d-0787-40c4-9889-97fa1210c418.webp",
+        "thumbnail": "images/thumbnail/il-9283db0d-0787-40c4-9889-97fa1210c418.webp",
+        "mainColor": "rgb(86,59,44)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "15"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "556cc757-34bd-4ec8-b2c1-efd4f4a2399c",
+        "image": "556cc757-34bd-4ec8-b2c1-efd4f4a2399c.webp",
+        "thumbnail": "images/thumbnail/il-556cc757-34bd-4ec8-b2c1-efd4f4a2399c.webp",
+        "mainColor": "rgb(70,47,30)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "14"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "793c5b83-2380-463e-b639-162592a85caa",
+        "image": "793c5b83-2380-463e-b639-162592a85caa.webp",
+        "thumbnail": "images/thumbnail/il-793c5b83-2380-463e-b639-162592a85caa.webp",
+        "mainColor": "rgb(43,40,37)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "13"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "dc381bc9-c160-424c-9adc-a912997bb39e",
+        "image": "dc381bc9-c160-424c-9adc-a912997bb39e.webp",
+        "thumbnail": "images/thumbnail/il-dc381bc9-c160-424c-9adc-a912997bb39e.webp",
+        "mainColor": "rgb(61,63,49)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "12"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "c5576e70-3c4c-4a58-bff8-70710967993b",
+        "image": "c5576e70-3c4c-4a58-bff8-70710967993b.webp",
+        "thumbnail": "images/thumbnail/il-c5576e70-3c4c-4a58-bff8-70710967993b.webp",
+        "mainColor": "rgb(60,61,54)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "11"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "f988f50c-a9e3-495c-99da-16ee4715be38",
+        "image": "f988f50c-a9e3-495c-99da-16ee4715be38.webp",
+        "thumbnail": "images/thumbnail/il-f988f50c-a9e3-495c-99da-16ee4715be38.webp",
+        "mainColor": "rgb(95,75,65)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "11"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "64a3ff3d-df51-4b2f-8e7d-bca41a0bda98",
+        "image": "64a3ff3d-df51-4b2f-8e7d-bca41a0bda98.webp",
+        "thumbnail": "images/thumbnail/il-64a3ff3d-df51-4b2f-8e7d-bca41a0bda98.webp",
+        "mainColor": "rgb(75,67,60)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "11"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "24bf2d83-036c-4c09-9ec5-3347d50c26f4",
+        "image": "24bf2d83-036c-4c09-9ec5-3347d50c26f4.webp",
+        "thumbnail": "images/thumbnail/il-24bf2d83-036c-4c09-9ec5-3347d50c26f4.webp",
+        "mainColor": "rgb(132,127,122)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "10"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "d2cbdfc7-92f0-4916-8aed-d029afffcce2",
+        "image": "d2cbdfc7-92f0-4916-8aed-d029afffcce2.webp",
+        "thumbnail": "images/thumbnail/il-d2cbdfc7-92f0-4916-8aed-d029afffcce2.webp",
+        "mainColor": "rgb(58,52,44)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "08"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "0b6ecaba-024a-4df8-ba15-a5ef1da9e394",
+        "image": "0b6ecaba-024a-4df8-ba15-a5ef1da9e394.webp",
+        "thumbnail": "images/thumbnail/il-0b6ecaba-024a-4df8-ba15-a5ef1da9e394.webp",
+        "mainColor": "rgb(189,186,181)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "07"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "d6783914-1abe-4698-a631-35bdf71b6c54",
+        "image": "d6783914-1abe-4698-a631-35bdf71b6c54.webp",
+        "thumbnail": "images/thumbnail/il-d6783914-1abe-4698-a631-35bdf71b6c54.webp",
+        "mainColor": "rgb(65,61,54)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "06"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "a58a0f6b-9cd0-4361-b205-45565b967707",
+        "image": "a58a0f6b-9cd0-4361-b205-45565b967707.webp",
+        "thumbnail": "images/thumbnail/il-a58a0f6b-9cd0-4361-b205-45565b967707.webp",
+        "mainColor": "rgb(178,169,163)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "05"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "d35d9660-6202-45a2-a0b4-1b336e049bb2",
+        "image": "d35d9660-6202-45a2-a0b4-1b336e049bb2.webp",
+        "thumbnail": "images/thumbnail/il-d35d9660-6202-45a2-a0b4-1b336e049bb2.webp",
+        "mainColor": "rgb(209,204,201)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "04"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "7a17ea46-19f5-4416-8d6e-410fcb3e55ec",
+        "image": "7a17ea46-19f5-4416-8d6e-410fcb3e55ec.webp",
+        "thumbnail": "images/thumbnail/il-7a17ea46-19f5-4416-8d6e-410fcb3e55ec.webp",
+        "mainColor": "rgb(72,69,65)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "03"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "982353dc-64c3-4731-9a37-f42dfc0dad88",
+        "image": "982353dc-64c3-4731-9a37-f42dfc0dad88.webp",
+        "thumbnail": "images/thumbnail/il-982353dc-64c3-4731-9a37-f42dfc0dad88.webp",
+        "mainColor": "rgb(212,200,188)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "02"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "a582314d-655a-4666-86d7-8e126a433a3e",
+        "image": "a582314d-655a-4666-86d7-8e126a433a3e.webp",
+        "thumbnail": "images/thumbnail/il-a582314d-655a-4666-86d7-8e126a433a3e.webp",
+        "mainColor": "rgb(62,54,47)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2019",
+          "month": "03",
+          "day": "01"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "3866fcd4-ffd7-4989-a866-8b512b417707",
+        "image": "3866fcd4-ffd7-4989-a866-8b512b417707.webp",
+        "thumbnail": "images/thumbnail/il-3866fcd4-ffd7-4989-a866-8b512b417707.webp",
+        "mainColor": "rgb(149,142,136)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2018",
+          "month": "03",
+          "day": "17"
+        },
+        "location": "Lisboa, Lisboa - Portugal",
+        "uuid": "b7a5939f-76a1-4742-83ac-db02d27c8b24",
+        "image": "b7a5939f-76a1-4742-83ac-db02d27c8b24.webp",
+        "thumbnail": "images/thumbnail/il-b7a5939f-76a1-4742-83ac-db02d27c8b24.webp",
+        "mainColor": "rgb(108,105,101)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2017",
+          "month": "03",
+          "day": "12"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "44c8b844-0ed9-4799-a142-0ddd11201596",
+        "image": "44c8b844-0ed9-4799-a142-0ddd11201596.webp",
+        "thumbnail": "images/thumbnail/il-44c8b844-0ed9-4799-a142-0ddd11201596.webp",
+        "mainColor": "rgb(132,133,130)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2017",
+          "month": "03",
+          "day": "07"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "e43c9e9e-8af2-4865-a036-7cc041fdb326",
+        "image": "e43c9e9e-8af2-4865-a036-7cc041fdb326.webp",
+        "thumbnail": "images/thumbnail/il-e43c9e9e-8af2-4865-a036-7cc041fdb326.webp",
+        "mainColor": "rgb(121,125,113)",
+        "width": 1080,
+        "height": 810
+      }
+    ],
     "02": [
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "28"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "641cd710-e2cd-4736-b237-d0b8bb4b01ed",
+        "image": "641cd710-e2cd-4736-b237-d0b8bb4b01ed.webp",
+        "thumbnail": "images/thumbnail/il-641cd710-e2cd-4736-b237-d0b8bb4b01ed.webp",
+        "mainColor": "rgb(78,88,83)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "27"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "cc642a19-299e-412f-9407-74ae924d203e",
+        "image": "cc642a19-299e-412f-9407-74ae924d203e.webp",
+        "thumbnail": "images/thumbnail/il-cc642a19-299e-412f-9407-74ae924d203e.webp",
+        "mainColor": "rgb(58,58,42)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "26"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "e96da28a-3bb4-4afa-b984-da15b1950b53",
+        "image": "e96da28a-3bb4-4afa-b984-da15b1950b53.webp",
+        "thumbnail": "images/thumbnail/il-e96da28a-3bb4-4afa-b984-da15b1950b53.webp",
+        "mainColor": "rgb(46,38,31)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "25"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "b89e5b47-2d36-4ff9-8c6e-8ef79a7506c3",
+        "image": "b89e5b47-2d36-4ff9-8c6e-8ef79a7506c3.webp",
+        "thumbnail": "images/thumbnail/il-b89e5b47-2d36-4ff9-8c6e-8ef79a7506c3.webp",
+        "mainColor": "rgb(125,129,95)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "24"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "20c2265c-48e4-4fca-8c9c-771243c6b100",
+        "image": "20c2265c-48e4-4fca-8c9c-771243c6b100.webp",
+        "thumbnail": "images/thumbnail/il-20c2265c-48e4-4fca-8c9c-771243c6b100.webp",
+        "mainColor": "rgb(131,122,114)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "23"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "692aaee3-f74c-45e5-94b7-ea58cba19cc6",
+        "image": "692aaee3-f74c-45e5-94b7-ea58cba19cc6.webp",
+        "thumbnail": "images/thumbnail/il-692aaee3-f74c-45e5-94b7-ea58cba19cc6.webp",
+        "mainColor": "rgb(15,12,11)",
+        "width": 1080,
+        "height": 1440
+      },
+      {
+        "date": {
+          "year": "2026",
+          "month": "02",
+          "day": "22"
+        },
+        "location": "Curitiba, PR - Brasil",
+        "uuid": "3c9975c1-04aa-40bc-8be7-191b87f3b580",
+        "image": "3c9975c1-04aa-40bc-8be7-191b87f3b580.webp",
+        "thumbnail": "images/thumbnail/il-3c9975c1-04aa-40bc-8be7-191b87f3b580.webp",
+        "mainColor": "rgb(38,28,17)",
+        "width": 1080,
+        "height": 1440
+      },
       {
         "date": {
           "year": "2026",
@@ -12768,988 +14086,6 @@
         "mainColor": "rgb(203,209,218)",
         "width": 1080,
         "height": 1440
-      }
-    ],
-    "03": [
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "31"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "41e908ce-535f-4719-8e3e-2955d97e9c8c",
-        "image": "41e908ce-535f-4719-8e3e-2955d97e9c8c.webp",
-        "thumbnail": "images/thumbnail/il-41e908ce-535f-4719-8e3e-2955d97e9c8c.webp",
-        "mainColor": "rgb(136,134,8)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "30"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "0fa11c25-8547-4bd7-86f9-15d6cb32955b",
-        "image": "0fa11c25-8547-4bd7-86f9-15d6cb32955b.webp",
-        "thumbnail": "images/thumbnail/il-0fa11c25-8547-4bd7-86f9-15d6cb32955b.webp",
-        "mainColor": "rgb(192,190,187)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "30"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "04239aed-1da9-4623-bba3-a000adf40a8e",
-        "image": "04239aed-1da9-4623-bba3-a000adf40a8e.webp",
-        "thumbnail": "images/thumbnail/il-04239aed-1da9-4623-bba3-a000adf40a8e.webp",
-        "mainColor": "rgb(111,108,105)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "29"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "13e86146-7326-48b8-a119-5e6d3f1228f8",
-        "image": "13e86146-7326-48b8-a119-5e6d3f1228f8.webp",
-        "thumbnail": "images/thumbnail/il-13e86146-7326-48b8-a119-5e6d3f1228f8.webp",
-        "mainColor": "rgb(113,86,64)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "29"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "324ea052-308d-4da0-b4eb-e4098572d526",
-        "image": "324ea052-308d-4da0-b4eb-e4098572d526.webp",
-        "thumbnail": "images/thumbnail/il-324ea052-308d-4da0-b4eb-e4098572d526.webp",
-        "mainColor": "rgb(120,105,96)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "29"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "bb66c057-19fb-4415-8e59-5f39f554ae7c",
-        "image": "bb66c057-19fb-4415-8e59-5f39f554ae7c.webp",
-        "thumbnail": "images/thumbnail/il-bb66c057-19fb-4415-8e59-5f39f554ae7c.webp",
-        "mainColor": "rgb(103,93,74)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "28"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "009a2eaa-3a46-4d92-bd0c-97ca790fe0ec",
-        "image": "009a2eaa-3a46-4d92-bd0c-97ca790fe0ec.webp",
-        "thumbnail": "images/thumbnail/il-009a2eaa-3a46-4d92-bd0c-97ca790fe0ec.webp",
-        "mainColor": "rgb(68,62,72)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "27"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "a7abfd4f-e74f-438b-99e5-90d1f1b8506f",
-        "image": "a7abfd4f-e74f-438b-99e5-90d1f1b8506f.webp",
-        "thumbnail": "images/thumbnail/il-a7abfd4f-e74f-438b-99e5-90d1f1b8506f.webp",
-        "mainColor": "rgb(70,52,42)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "27"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "6793b819-36a2-457c-b567-cc7f5e53bb7f",
-        "image": "6793b819-36a2-457c-b567-cc7f5e53bb7f.webp",
-        "thumbnail": "images/thumbnail/il-6793b819-36a2-457c-b567-cc7f5e53bb7f.webp",
-        "mainColor": "rgb(64,66,64)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "26"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "a0bca8d4-c6f5-4cdb-ba08-7e0213ecabf6",
-        "image": "a0bca8d4-c6f5-4cdb-ba08-7e0213ecabf6.webp",
-        "thumbnail": "images/thumbnail/il-a0bca8d4-c6f5-4cdb-ba08-7e0213ecabf6.webp",
-        "mainColor": "rgb(196,203,204)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "25"
-        },
-        "location": "São José dos Pinhais, PR - Brasil",
-        "uuid": "1754422e-fc0f-4f7e-84f0-0b31c32114b9",
-        "image": "1754422e-fc0f-4f7e-84f0-0b31c32114b9.webp",
-        "thumbnail": "images/thumbnail/il-1754422e-fc0f-4f7e-84f0-0b31c32114b9.webp",
-        "mainColor": "rgb(105,90,77)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "24"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "23645d20-0539-41b6-8d67-a3eec77c7ad3",
-        "image": "23645d20-0539-41b6-8d67-a3eec77c7ad3.webp",
-        "thumbnail": "images/thumbnail/il-23645d20-0539-41b6-8d67-a3eec77c7ad3.webp",
-        "mainColor": "rgb(128,67,44)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "23"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "c28b10f6-4baf-4750-8b88-44b8148ce850",
-        "image": "c28b10f6-4baf-4750-8b88-44b8148ce850.webp",
-        "thumbnail": "images/thumbnail/il-c28b10f6-4baf-4750-8b88-44b8148ce850.webp",
-        "mainColor": "rgb(172,157,143)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "22"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "feb52bac-909b-406a-bf49-95ee856a9dbf",
-        "image": "feb52bac-909b-406a-bf49-95ee856a9dbf.webp",
-        "thumbnail": "images/thumbnail/il-feb52bac-909b-406a-bf49-95ee856a9dbf.webp",
-        "mainColor": "rgb(110,92,81)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "21"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "48926963-925f-4460-b05e-2bb94e89fb60",
-        "image": "48926963-925f-4460-b05e-2bb94e89fb60.webp",
-        "thumbnail": "images/thumbnail/il-48926963-925f-4460-b05e-2bb94e89fb60.webp",
-        "mainColor": "rgb(122,110,99)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "20"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "1008434b-a652-4e44-b43b-599f608b6856",
-        "image": "1008434b-a652-4e44-b43b-599f608b6856.webp",
-        "thumbnail": "images/thumbnail/il-1008434b-a652-4e44-b43b-599f608b6856.webp",
-        "mainColor": "rgb(80,70,65)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "19"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "2b990e4c-b777-4ed5-949e-7491a3fe637e",
-        "image": "2b990e4c-b777-4ed5-949e-7491a3fe637e.webp",
-        "thumbnail": "images/thumbnail/il-2b990e4c-b777-4ed5-949e-7491a3fe637e.webp",
-        "mainColor": "rgb(88,89,73)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "18"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "9fb44500-fade-4557-b342-7c3f24fc8434",
-        "image": "9fb44500-fade-4557-b342-7c3f24fc8434.webp",
-        "thumbnail": "images/thumbnail/il-9fb44500-fade-4557-b342-7c3f24fc8434.webp",
-        "mainColor": "rgb(19,21,24)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "17"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "c2fc6583-ef60-4044-9f2b-de6e5290a920",
-        "image": "c2fc6583-ef60-4044-9f2b-de6e5290a920.webp",
-        "thumbnail": "images/thumbnail/il-c2fc6583-ef60-4044-9f2b-de6e5290a920.webp",
-        "mainColor": "rgb(54,168,194)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "16"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "60737b39-7a47-40d4-8291-9b38ce818851",
-        "image": "60737b39-7a47-40d4-8291-9b38ce818851.webp",
-        "thumbnail": "images/thumbnail/il-60737b39-7a47-40d4-8291-9b38ce818851.webp",
-        "mainColor": "rgb(160,149,138)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "15"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "3f15decb-734e-4279-a7cc-7a8e37caf2c6",
-        "image": "3f15decb-734e-4279-a7cc-7a8e37caf2c6.webp",
-        "thumbnail": "images/thumbnail/il-3f15decb-734e-4279-a7cc-7a8e37caf2c6.webp",
-        "mainColor": "rgb(51,46,52)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "14"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "0a813333-5bba-43a7-8d6f-8a6d92b45bbf",
-        "image": "0a813333-5bba-43a7-8d6f-8a6d92b45bbf.webp",
-        "thumbnail": "images/thumbnail/il-0a813333-5bba-43a7-8d6f-8a6d92b45bbf.webp",
-        "mainColor": "rgb(120,109,98)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "13"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "897e6bf8-39ac-4502-9c16-360de234133b",
-        "image": "897e6bf8-39ac-4502-9c16-360de234133b.webp",
-        "thumbnail": "images/thumbnail/il-897e6bf8-39ac-4502-9c16-360de234133b.webp",
-        "mainColor": "rgb(142,141,133)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "12"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "a606f511-2bb3-4597-83ac-b7a7b4c37fac",
-        "image": "a606f511-2bb3-4597-83ac-b7a7b4c37fac.webp",
-        "thumbnail": "images/thumbnail/il-a606f511-2bb3-4597-83ac-b7a7b4c37fac.webp",
-        "mainColor": "rgb(146,137,127)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "11"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "ae7e61b1-5c58-4c66-8829-fe6fb8cceb72",
-        "image": "ae7e61b1-5c58-4c66-8829-fe6fb8cceb72.webp",
-        "thumbnail": "images/thumbnail/il-ae7e61b1-5c58-4c66-8829-fe6fb8cceb72.webp",
-        "mainColor": "rgb(123,111,102)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "10"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "50daa37c-c5de-467c-b250-20b8b4cc1326",
-        "image": "50daa37c-c5de-467c-b250-20b8b4cc1326.webp",
-        "thumbnail": "images/thumbnail/il-50daa37c-c5de-467c-b250-20b8b4cc1326.webp",
-        "mainColor": "rgb(110,99,88)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "09"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "56527d7f-6693-45cc-a8ae-d181c0251a6a",
-        "image": "56527d7f-6693-45cc-a8ae-d181c0251a6a.webp",
-        "thumbnail": "images/thumbnail/il-56527d7f-6693-45cc-a8ae-d181c0251a6a.webp",
-        "mainColor": "rgb(167,153,139)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "08"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "8721636c-019e-4285-affb-10ee226c8c1b",
-        "image": "8721636c-019e-4285-affb-10ee226c8c1b.webp",
-        "thumbnail": "images/thumbnail/il-8721636c-019e-4285-affb-10ee226c8c1b.webp",
-        "mainColor": "rgb(114,94,78)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "08"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "472c64c8-2815-4bad-afdb-e2d70274a090",
-        "image": "472c64c8-2815-4bad-afdb-e2d70274a090.webp",
-        "thumbnail": "images/thumbnail/il-472c64c8-2815-4bad-afdb-e2d70274a090.webp",
-        "mainColor": "rgb(40,31,19)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "07"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "88b4abf7-432d-4528-8040-1446682e4ca4",
-        "image": "88b4abf7-432d-4528-8040-1446682e4ca4.webp",
-        "thumbnail": "images/thumbnail/il-88b4abf7-432d-4528-8040-1446682e4ca4.webp",
-        "mainColor": "rgb(65,62,61)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "06"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "10f82f81-8f9f-4b87-b147-cfcc482ab78e",
-        "image": "10f82f81-8f9f-4b87-b147-cfcc482ab78e.webp",
-        "thumbnail": "images/thumbnail/il-10f82f81-8f9f-4b87-b147-cfcc482ab78e.webp",
-        "mainColor": "rgb(42,39,38)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "05"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "4945b3a9-7b1f-4b2a-b0fe-4016345aa91b",
-        "image": "4945b3a9-7b1f-4b2a-b0fe-4016345aa91b.webp",
-        "thumbnail": "images/thumbnail/il-4945b3a9-7b1f-4b2a-b0fe-4016345aa91b.webp",
-        "mainColor": "rgb(142,141,141)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "04"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "2381e09e-9560-4940-8e01-b62998a5d9ef",
-        "image": "2381e09e-9560-4940-8e01-b62998a5d9ef.webp",
-        "thumbnail": "images/thumbnail/il-2381e09e-9560-4940-8e01-b62998a5d9ef.webp",
-        "mainColor": "rgb(61,56,52)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "03"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "ae0d9ad2-a46a-4455-a085-13c9c599c254",
-        "image": "ae0d9ad2-a46a-4455-a085-13c9c599c254.webp",
-        "thumbnail": "images/thumbnail/il-ae0d9ad2-a46a-4455-a085-13c9c599c254.webp",
-        "mainColor": "rgb(173,132,93)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "02"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "08eca38d-1b3d-4ce1-bedc-ff11614ed5d3",
-        "image": "08eca38d-1b3d-4ce1-bedc-ff11614ed5d3.webp",
-        "thumbnail": "images/thumbnail/il-08eca38d-1b3d-4ce1-bedc-ff11614ed5d3.webp",
-        "mainColor": "rgb(56,57,60)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2025",
-          "month": "03",
-          "day": "01"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "7d6f6075-6d1b-4e98-b645-00876dc27243",
-        "image": "7d6f6075-6d1b-4e98-b645-00876dc27243.webp",
-        "thumbnail": "images/thumbnail/il-7d6f6075-6d1b-4e98-b645-00876dc27243.webp",
-        "mainColor": "rgb(148,136,124)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2023",
-          "month": "03",
-          "day": "11"
-        },
-        "location": "São Paulo, SP - Brasil",
-        "uuid": "641a2bc4-8e15-46f6-9792-1606b68cf67b",
-        "image": "641a2bc4-8e15-46f6-9792-1606b68cf67b.webp",
-        "thumbnail": "images/thumbnail/il-641a2bc4-8e15-46f6-9792-1606b68cf67b.webp",
-        "mainColor": "rgb(76,69,62)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "29"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "6f89ab42-077a-4773-a3a9-ccfd2acc22fd",
-        "image": "6f89ab42-077a-4773-a3a9-ccfd2acc22fd.webp",
-        "thumbnail": "images/thumbnail/il-6f89ab42-077a-4773-a3a9-ccfd2acc22fd.webp",
-        "mainColor": "rgb(73,65,59)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "28"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "90760c85-42a3-4c36-a424-dd5d926634ed",
-        "image": "90760c85-42a3-4c36-a424-dd5d926634ed.webp",
-        "thumbnail": "images/thumbnail/il-90760c85-42a3-4c36-a424-dd5d926634ed.webp",
-        "mainColor": "rgb(135,119,58)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "27"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "082369e6-c58a-4e92-9a5e-f493be82336b",
-        "image": "082369e6-c58a-4e92-9a5e-f493be82336b.webp",
-        "thumbnail": "images/thumbnail/il-082369e6-c58a-4e92-9a5e-f493be82336b.webp",
-        "mainColor": "rgb(71,13,9)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "27"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "8a5ee16a-1e2e-435d-a2eb-4c9ce628f9f6",
-        "image": "8a5ee16a-1e2e-435d-a2eb-4c9ce628f9f6.webp",
-        "thumbnail": "images/thumbnail/il-8a5ee16a-1e2e-435d-a2eb-4c9ce628f9f6.webp",
-        "mainColor": "rgb(183,179,171)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "25"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "517df0ca-386a-44eb-b2d5-50786e2f07b2",
-        "image": "517df0ca-386a-44eb-b2d5-50786e2f07b2.webp",
-        "thumbnail": "images/thumbnail/il-517df0ca-386a-44eb-b2d5-50786e2f07b2.webp",
-        "mainColor": "rgb(138,90,55)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "24"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "bf3a53dc-d14a-4bfc-ac35-907ab0fc0bab",
-        "image": "bf3a53dc-d14a-4bfc-ac35-907ab0fc0bab.webp",
-        "thumbnail": "images/thumbnail/il-bf3a53dc-d14a-4bfc-ac35-907ab0fc0bab.webp",
-        "mainColor": "rgb(193,186,179)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "23"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "14ddb025-2361-484f-a9ae-bd6ed7f44555",
-        "image": "14ddb025-2361-484f-a9ae-bd6ed7f44555.webp",
-        "thumbnail": "images/thumbnail/il-14ddb025-2361-484f-a9ae-bd6ed7f44555.webp",
-        "mainColor": "rgb(71,57,43)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "22"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "3c881a6a-7731-4356-a3a6-7878940af572",
-        "image": "3c881a6a-7731-4356-a3a6-7878940af572.webp",
-        "thumbnail": "images/thumbnail/il-3c881a6a-7731-4356-a3a6-7878940af572.webp",
-        "mainColor": "rgb(138,135,127)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "20"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "daf542e4-9dac-4c83-a3cf-ea9a1dde2d43",
-        "image": "daf542e4-9dac-4c83-a3cf-ea9a1dde2d43.webp",
-        "thumbnail": "images/thumbnail/il-daf542e4-9dac-4c83-a3cf-ea9a1dde2d43.webp",
-        "mainColor": "rgb(133,128,123)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "19"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "ac60c409-50c5-4b18-b101-83d8ad5f70c7",
-        "image": "ac60c409-50c5-4b18-b101-83d8ad5f70c7.webp",
-        "thumbnail": "images/thumbnail/il-ac60c409-50c5-4b18-b101-83d8ad5f70c7.webp",
-        "mainColor": "rgb(179,176,171)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "18"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "99cd48c2-c4fa-476a-ae16-e0e359c7c028",
-        "image": "99cd48c2-c4fa-476a-ae16-e0e359c7c028.webp",
-        "thumbnail": "images/thumbnail/il-99cd48c2-c4fa-476a-ae16-e0e359c7c028.webp",
-        "mainColor": "rgb(194,192,185)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "17"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "47f0cec1-b25e-42f2-bb82-2ef85388bca2",
-        "image": "47f0cec1-b25e-42f2-bb82-2ef85388bca2.webp",
-        "thumbnail": "images/thumbnail/il-47f0cec1-b25e-42f2-bb82-2ef85388bca2.webp",
-        "mainColor": "rgb(84,75,69)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "17"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "46a3e213-3f1b-4e85-94d2-a22b526ae68c",
-        "image": "46a3e213-3f1b-4e85-94d2-a22b526ae68c.webp",
-        "thumbnail": "images/thumbnail/il-46a3e213-3f1b-4e85-94d2-a22b526ae68c.webp",
-        "mainColor": "rgb(117,114,111)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "16"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "9283db0d-0787-40c4-9889-97fa1210c418",
-        "image": "9283db0d-0787-40c4-9889-97fa1210c418.webp",
-        "thumbnail": "images/thumbnail/il-9283db0d-0787-40c4-9889-97fa1210c418.webp",
-        "mainColor": "rgb(86,59,44)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "15"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "556cc757-34bd-4ec8-b2c1-efd4f4a2399c",
-        "image": "556cc757-34bd-4ec8-b2c1-efd4f4a2399c.webp",
-        "thumbnail": "images/thumbnail/il-556cc757-34bd-4ec8-b2c1-efd4f4a2399c.webp",
-        "mainColor": "rgb(70,47,30)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "14"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "793c5b83-2380-463e-b639-162592a85caa",
-        "image": "793c5b83-2380-463e-b639-162592a85caa.webp",
-        "thumbnail": "images/thumbnail/il-793c5b83-2380-463e-b639-162592a85caa.webp",
-        "mainColor": "rgb(43,40,37)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "13"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "dc381bc9-c160-424c-9adc-a912997bb39e",
-        "image": "dc381bc9-c160-424c-9adc-a912997bb39e.webp",
-        "thumbnail": "images/thumbnail/il-dc381bc9-c160-424c-9adc-a912997bb39e.webp",
-        "mainColor": "rgb(61,63,49)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "12"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "c5576e70-3c4c-4a58-bff8-70710967993b",
-        "image": "c5576e70-3c4c-4a58-bff8-70710967993b.webp",
-        "thumbnail": "images/thumbnail/il-c5576e70-3c4c-4a58-bff8-70710967993b.webp",
-        "mainColor": "rgb(60,61,54)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "11"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "f988f50c-a9e3-495c-99da-16ee4715be38",
-        "image": "f988f50c-a9e3-495c-99da-16ee4715be38.webp",
-        "thumbnail": "images/thumbnail/il-f988f50c-a9e3-495c-99da-16ee4715be38.webp",
-        "mainColor": "rgb(95,75,65)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "11"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "64a3ff3d-df51-4b2f-8e7d-bca41a0bda98",
-        "image": "64a3ff3d-df51-4b2f-8e7d-bca41a0bda98.webp",
-        "thumbnail": "images/thumbnail/il-64a3ff3d-df51-4b2f-8e7d-bca41a0bda98.webp",
-        "mainColor": "rgb(75,67,60)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "11"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "24bf2d83-036c-4c09-9ec5-3347d50c26f4",
-        "image": "24bf2d83-036c-4c09-9ec5-3347d50c26f4.webp",
-        "thumbnail": "images/thumbnail/il-24bf2d83-036c-4c09-9ec5-3347d50c26f4.webp",
-        "mainColor": "rgb(132,127,122)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "10"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "d2cbdfc7-92f0-4916-8aed-d029afffcce2",
-        "image": "d2cbdfc7-92f0-4916-8aed-d029afffcce2.webp",
-        "thumbnail": "images/thumbnail/il-d2cbdfc7-92f0-4916-8aed-d029afffcce2.webp",
-        "mainColor": "rgb(58,52,44)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "08"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "0b6ecaba-024a-4df8-ba15-a5ef1da9e394",
-        "image": "0b6ecaba-024a-4df8-ba15-a5ef1da9e394.webp",
-        "thumbnail": "images/thumbnail/il-0b6ecaba-024a-4df8-ba15-a5ef1da9e394.webp",
-        "mainColor": "rgb(189,186,181)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "07"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "d6783914-1abe-4698-a631-35bdf71b6c54",
-        "image": "d6783914-1abe-4698-a631-35bdf71b6c54.webp",
-        "thumbnail": "images/thumbnail/il-d6783914-1abe-4698-a631-35bdf71b6c54.webp",
-        "mainColor": "rgb(65,61,54)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "06"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "a58a0f6b-9cd0-4361-b205-45565b967707",
-        "image": "a58a0f6b-9cd0-4361-b205-45565b967707.webp",
-        "thumbnail": "images/thumbnail/il-a58a0f6b-9cd0-4361-b205-45565b967707.webp",
-        "mainColor": "rgb(178,169,163)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "05"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "d35d9660-6202-45a2-a0b4-1b336e049bb2",
-        "image": "d35d9660-6202-45a2-a0b4-1b336e049bb2.webp",
-        "thumbnail": "images/thumbnail/il-d35d9660-6202-45a2-a0b4-1b336e049bb2.webp",
-        "mainColor": "rgb(209,204,201)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "04"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "7a17ea46-19f5-4416-8d6e-410fcb3e55ec",
-        "image": "7a17ea46-19f5-4416-8d6e-410fcb3e55ec.webp",
-        "thumbnail": "images/thumbnail/il-7a17ea46-19f5-4416-8d6e-410fcb3e55ec.webp",
-        "mainColor": "rgb(72,69,65)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "03"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "982353dc-64c3-4731-9a37-f42dfc0dad88",
-        "image": "982353dc-64c3-4731-9a37-f42dfc0dad88.webp",
-        "thumbnail": "images/thumbnail/il-982353dc-64c3-4731-9a37-f42dfc0dad88.webp",
-        "mainColor": "rgb(212,200,188)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "02"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "a582314d-655a-4666-86d7-8e126a433a3e",
-        "image": "a582314d-655a-4666-86d7-8e126a433a3e.webp",
-        "thumbnail": "images/thumbnail/il-a582314d-655a-4666-86d7-8e126a433a3e.webp",
-        "mainColor": "rgb(62,54,47)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2019",
-          "month": "03",
-          "day": "01"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "3866fcd4-ffd7-4989-a866-8b512b417707",
-        "image": "3866fcd4-ffd7-4989-a866-8b512b417707.webp",
-        "thumbnail": "images/thumbnail/il-3866fcd4-ffd7-4989-a866-8b512b417707.webp",
-        "mainColor": "rgb(149,142,136)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2018",
-          "month": "03",
-          "day": "17"
-        },
-        "location": "Lisboa, Lisboa - Portugal",
-        "uuid": "b7a5939f-76a1-4742-83ac-db02d27c8b24",
-        "image": "b7a5939f-76a1-4742-83ac-db02d27c8b24.webp",
-        "thumbnail": "images/thumbnail/il-b7a5939f-76a1-4742-83ac-db02d27c8b24.webp",
-        "mainColor": "rgb(108,105,101)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2017",
-          "month": "03",
-          "day": "12"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "44c8b844-0ed9-4799-a142-0ddd11201596",
-        "image": "44c8b844-0ed9-4799-a142-0ddd11201596.webp",
-        "thumbnail": "images/thumbnail/il-44c8b844-0ed9-4799-a142-0ddd11201596.webp",
-        "mainColor": "rgb(132,133,130)",
-        "width": 1080,
-        "height": 1440
-      },
-      {
-        "date": {
-          "year": "2017",
-          "month": "03",
-          "day": "07"
-        },
-        "location": "Curitiba, PR - Brasil",
-        "uuid": "e43c9e9e-8af2-4865-a036-7cc041fdb326",
-        "image": "e43c9e9e-8af2-4865-a036-7cc041fdb326.webp",
-        "thumbnail": "images/thumbnail/il-e43c9e9e-8af2-4865-a036-7cc041fdb326.webp",
-        "mainColor": "rgb(121,125,113)",
-        "width": 1080,
-        "height": 810
       }
     ]
   }
