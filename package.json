@@ -38,7 +38,7 @@
     "markdown-it-container": "^4.0.0",
     "sass": "^1.83.4",
     "sharp": "^0.33.5",
-    "skia-canvas": "^2.0.2",
+    "skia-canvas": "^3.0.8",
     "typescript": "^5.8.3",
     "uuid": "^11.0.5"
   },

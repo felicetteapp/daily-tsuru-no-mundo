@@ -21,6 +21,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   //  eleventyConfig.addPassthroughCopy({ "public/images": "images" });
   eleventyConfig.addPassthroughCopy({ "public/js": "js" });
+  //copy favicon and manifest
+  eleventyConfig.addPassthroughCopy({
+    "public/images/favicon.ico": "images/favicon.ico",
+  });
   eleventyConfig.addPassthroughCopy({ "public/.well-known": ".well-known" });
 
   eleventyConfig.addLiquidFilter("gifUrl", (uuid) => {
