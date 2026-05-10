@@ -119,11 +119,13 @@ export default async function (eleventyConfig) {
           const galleryAttrs = ["gc", "gl", "gloc", "gbc", "gf"];
           const photoAttrs = ["dc", "dl", "dloc", "dbc", "df"];
           const ilAttrs = ["il-", "t-"];
+          const lenisAttrs = ["data-lenis-prevent"];
 
           if (
             galleryAttrs.includes(attributeName) ||
             photoAttrs.includes(attributeName) ||
-            ilAttrs.some((prefix) => attributeName.startsWith(prefix))
+            ilAttrs.some((prefix) => attributeName.startsWith(prefix)) ||
+            lenisAttrs.includes(attributeName)
           ) {
             return false;
           }
