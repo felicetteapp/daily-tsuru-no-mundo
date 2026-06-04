@@ -73,6 +73,7 @@ const translatedToPortugueseCities = {
     genre: "N",
     number: "S",
   },
+  "Porto Alegre": { name: "Porto Alegre", genre: "N", number: "S" },
 };
 
 const getCountryDataAsJson = () => {
