@@ -21,7 +21,7 @@ const translatedToPortugueseCountries = {
   Nederland: { name: "Paises Baixos", genre: "M", number: "P" },
   Uruguay: { name: "Uruguai", genre: "M", number: "S" },
   Türkiye: { name: "Turquia", genre: "F", number: "S" },
-  Portugal: { name: "Portugal", genre: "M", number: "S" },
+  Portugal: { name: "Portugal", genre: "N", number: "S" },
 };
 
 const translatedToPortugueseCities = {
